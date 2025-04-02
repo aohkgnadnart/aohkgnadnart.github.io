@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dfs and Similar on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/dfs-and-similar/</link><description>Recent content in Dfs and Similar on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/dfs-and-similar/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: Best Sum Any Tree Path</title><link>http://localhost:1313/posts/2021-11-02-BestSumAnyTreePath/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-02-BestSumAnyTreePath/</guid><description>&lt;p>Cho cây có n &lt;code>(1 ≤ n ≤ 1e5)&lt;/code> đỉnh đánh số từ 0 tới n - 1, cha của các đỉnh và trọng số của các đỉnh. Tìm được đi có tổng trọng số lớn nhất.
+Biết &lt;code>root = 0&lt;/code>, &lt;code>parent[0] = -1&lt;/code>&lt;/p>
+&lt;p>
+ &lt;img src="https://user-images.githubusercontent.com/83690404/139783508-40aba718-91f5-4761-8946-5f93adada1c7.png" alt="Screenshot 2021-11-02 101706" />&lt;/p></description></item><item><title>Problem: Crazy Robot</title><link>http://localhost:1313/posts/2021-12-17-CrazyRobot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-17-CrazyRobot/</guid><description>&lt;p>Có một lưới, bao gồm n hàng và m cột. Mỗi ô của lưới là tự do hoặc bị chặn. Một trong những ô trống chứa phòng thí nghiệm. Tất cả các ô bên ngoài đường viền của lưới cũng bị chặn.&lt;/p>
+&lt;p>Một người máy điên rồ đã trốn thoát khỏi phòng thí nghiệm này. Nó hiện đang ở trong một số ô trống của lưới. Bạn có thể gửi một trong các lệnh sau tới rô bốt: &amp;ldquo;di chuyển sang phải&amp;rdquo;, &amp;ldquo;di chuyển xuống&amp;rdquo;, &amp;ldquo;di chuyển sang trái&amp;rdquo; hoặc &amp;ldquo;di chuyển lên trên&amp;rdquo;. Mỗi lệnh có nghĩa là di chuyển đến một ô lân cận theo hướng tương ứng.&lt;/p>
+&lt;p>Tuy nhiên, vì robot điên, nó sẽ làm bất cứ điều gì ngoại trừ việc tuân theo lệnh. Khi nhận được lệnh, nó sẽ chọn một hướng khác với hướng trong lệnh và ô ở hướng đó không bị chặn. Nếu có một hướng như vậy, thì nó sẽ di chuyển đến một ô lân cận theo hướng đó. Nếu không, nó sẽ không làm gì cả.&lt;/p>
+&lt;p>Chúng tôi muốn đưa robot đến phòng thí nghiệm để sửa nó. Đối với mỗi ô trống, hãy xác định xem liệu robot có thể bị buộc đến phòng thí nghiệm bắt đầu từ ô này hay không. Có nghĩa là, sau mỗi bước của rô bốt, một lệnh có thể được gửi đến rô bốt sao cho bất kể rô bốt chọn hướng nào khác nhau, nó sẽ kết thúc trong phòng thí nghiệm.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1000
+1≤n,m≤1e6; n x m≤1e6
+&amp;#39;.&amp;#39; — the cell is free;
+&amp;#39;#&amp;#39; — the cell is blocked;
+&amp;#39;L&amp;#39; — the cell contains a lab.
+The grid contains exactly one lab. The sum of n⋅m over all testcases doesn&amp;#39;t exceed 106.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+3 3
+...
+.L.
+...
+4 5
+#....
+..##L
+...#.
+.....
+1 1
+L
+1 9
+....L..#.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>...
+.L.
+...
+#++++
+..##L
+...#+
+...++
+L
+++++L++#.
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Quảng cáo</title><link>http://localhost:1313/posts/2021-10-21-quangcao/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-21-quangcao/</guid><description>&lt;p>Nhân dịp Tết sắp đến công ty Jelly-for-Kids quyết định tăng cường việc quảng bá sản phẩm đến người tiêu dùng. Vì thế giám đốc marketing, ông Fruit-Jelly muốn gửi đi số lượng nhân viên tối đa có thể, làm nhiệm vụ tiếp thị tại đại lý trong thành phố&lt;/p>
+&lt;p>Trong thành phố có m con đường, n đại lý bán kẹo (đánh số từ 1 đến n). Mỗi con đường chỉ nối trực tiếp giữa 2 đại lý, và được ký hiệu bằng chỉ số của 2 đại lý mà nó nối. Đồng thời, giữa 2 đại lý bất kỳ có không quá 1 con đường nối chúng&lt;/p>
+&lt;p>Ông Fruit-Jelly nghĩ rằng, ông ta sẽ quản lý nhân viên dễ hơn nếu xếp mỗi người tiếp thị trên những hành trình có tính chất thứ tự. Tức là những đại lý bán kẹo trên hành trình đó thỏa các điều kiện sau&lt;/p>
+&lt;p>Có đường nối trực tiếp giữa 2 đại lý liên tiếp nhau trên hành trình&lt;/p>
+&lt;p>Từ một đại lý bất kỳ trong hành trình có thể đi qua tất cả các đoạn đường trong hành trình đó rồi trở về nơi xuất phát mà không đi qua đoạn đường nào quá một lần&lt;/p>
+&lt;p>Hành trình phân công cho mỗi nhân viên phải có ít nhất một đoạn đường chưa có nhân viên nào khác đi tiếp thị.&lt;/p>
+&lt;p>Mỗi nhân viên chỉ di chuyển trên hành trình mà anh ta được phân công. Hãy tính số lượng nhân viên tối đa mà ông Fruit-Jelly có thể xếp việc, và hành trình cụ thể mà mỗi người được xếp.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>N &amp;lt;= 2000
+M &amp;lt;= 5000
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>5 6
+1 2
+2 4
+4 5
+3 5
+1 3
+2 3
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Road Improvement</title><link>http://localhost:1313/posts/2021-12-02-RoadImprovement/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-02-RoadImprovement/</guid><description>&lt;p>Đất nước có &lt;code>n&lt;/code> thành phố và &lt;code>n - 1&lt;/code> con đường hai chiều, bạn có thể đi từ mọi thành phố này đến bất kỳ thành phố nào khác nếu bạn chỉ di chuyển dọc theo các con đường. Các thành phố được đánh số bằng các số nguyên từ &lt;code>1&lt;/code> đến &lt;code>n&lt;/code>.&lt;/p>
+&lt;p>Tất cả các con đường ban đầu đều xấu, nhưng chính phủ muốn cải thiện tình trạng của một số con đường. Chúng tôi sẽ cho rằng người dân hài lòng về việc cải tạo đường nếu con đường từ thủ đô nằm ở thành phố &lt;code>x&lt;/code> đến bất kỳ thành phố nào khác có nhiều nhất một con đường xấu.&lt;/p>
+&lt;p>Nhiệm vụ của bạn là với mọi &lt;code>x&lt;/code> có thể xác định số cách cải thiện chất lượng của một số con đường để đáp ứng điều kiện của người dân. Vì những giá trị đó có thể khá lớn, bạn cần in từng mô-đun giá trị &lt;code>1000000007&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>n &amp;lt;= 2e5
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+1 1
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4 3 3
+&lt;/code>&lt;/pre></description></item><item><title>Problem: The Number of Imposters</title><link>http://localhost:1313/posts/2021-10-12-TheNumberofImposters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-12-TheNumberofImposters/</guid><description>&lt;p>Cho &lt;code>n&lt;/code> người chơi cùng chơi game. mỗi người sẽ là &lt;code>imposter&lt;/code> hoặc &lt;code>crewmate&lt;/code>. &lt;code>imposter&lt;/code> là người luôn nói dối, cewmate là người luôn nói thật. cho &lt;code>m&lt;/code> nhận xét có dạng &lt;code>(i, j, c)&lt;/code> ví dụ: &lt;code>1 2 imposter&lt;/code>, tức là người chơi &lt;code>1&lt;/code> nói người chơi &lt;code>2&lt;/code> là &lt;code>imposter&lt;/code>, như vậy nếu người chơi &lt;code>2&lt;/code> đúng là &lt;code>imposter&lt;/code> thì người chơi &lt;code>1&lt;/code> là &lt;code>crewmate&lt;/code>, và ngược lại.
+Tính số lượng &lt;strong>tối đa&lt;/strong> imposter trong game.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1e4
+1≤n≤2e5
+0≤m≤5e5
+the structure &amp;#34;i j c&amp;#34; where i and j are two distinct integers and c is a string (1≤i,j≤n; i≠j; c is either imposter or crewmate
+There can be multiple comments for the same pair of (i,j).
+It is guaranteed that the sum of all n does not exceed 2e5 and the sum of all m does not exceed 5e5.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>5
+3 2
+1 2 imposter
+2 3 crewmate
+5 4
+1 3 crewmate
+2 5 crewmate
+2 4 imposter
+3 4 imposter
+2 2
+1 2 imposter
+2 1 crewmate
+3 5
+1 2 imposter
+1 2 imposter
+3 2 crewmate
+3 2 crewmate
+1 3 imposter
+5 0
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+4
+-1
+2
+5
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Tom and Jery</title><link>http://localhost:1313/posts/2021-12-17-TomandJery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-17-TomandJery/</guid><description>&lt;p>Tom và Jerry đang đuổi theo nhau trong một mê cung được hình thành như một cái cây.
+Cây này có &lt;code>𝑛&lt;/code> nút. Jerry hiện đang ở nút &lt;code>𝑥&lt;/code> và có một quả bom do Tom đặt ở đây.
+Bom có tầm bắn &lt;code>𝑡&lt;/code> nên khi phát nổ, tất cả các nút có khoảng cách đến nút 𝑥 nhỏ hơn hoặc bằng &lt;code>𝑡&lt;/code> sẽ bị cháy.
+Nếu Jerry bị cháy, anh ta sẽ bị ngất và bị Tom bắt. Tất nhiên, Jerry muốn thoát khỏi khu vực phát nổ bằng cách chạy qua các cạnh trong mê cung.
+Mặt khác, Tom muốn bắt Jerry nên định chặn một vài cạnh trên mê cung để Jerry không thể di chuyển qua các cạnh này.
+Nhiệm vụ: Đưa ra một tập hợp &lt;code>𝑚&lt;/code> truy vấn, mỗi truy vấn có hai số &lt;code>𝑥&lt;/code> và &lt;code>𝑡&lt;/code>, cho biết nút ban đầu mà Jerry và quả bom hiện đang ở, và phạm vi của quả bom.
+Hãy giúp Tom tìm số cạnh tối thiểu phải chặn để bắt được Jerry&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 ≤ 𝑛, 𝑚 ≤ 1e5
+1 ≤ 𝑢, 𝑣 ≤ 𝑛; 𝑢 ≠ 𝑣
+1 ≤ 𝑥 ≤ 𝑛; 0 ≤ 𝑡 ≤ 𝑛
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>7 3
+1 2
+2 3
+2 4
+3 5
+3 6
+4 7
+4 1
+2 2
+2 1
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1
+0
+2
+&lt;/code>&lt;/pre></description></item></channel></rss>

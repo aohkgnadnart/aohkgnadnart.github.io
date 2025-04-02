@@ -1,0 +1,121 @@
+<!doctype html><html lang=en dir=ltr><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="http://localhost:1313/tags/strings/"><meta property="og:site_name" content="Aohkgnadnart Blog"><meta property="og:title" content="Strings"><meta property="og:locale" content="en"><meta property="og:type" content="website"><title>Strings | Aohkgnadnart Blog</title>
+<link rel=icon href=/favicon.png><link rel=manifest href=/manifest.json><link rel=canonical href=http://localhost:1313/tags/strings/><link rel=stylesheet href=/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin=anonymous><script defer src=/fuse.min.js></script><script defer src=/en.search.min.13e139159b5ca30479736515fd7347cdfcfa90e8d16be14160001aec6b9261cd.js integrity="sha256-E+E5FZtcowR5c2UV/XNHzfz6kOjRa+FBYAAa7GuSYc0=" crossorigin=anonymous></script><script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script><link rel=alternate type=application/rss+xml href=http://localhost:1313/tags/strings/index.xml title="Aohkgnadnart Blog"></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>Aohkgnadnart Blog</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
+<label for=languages class="flex justify-between"><a role=button class="flex align-center"><img src=/svg/translate.svg class=book-icon alt=Languages>
+English</a></label><ul><li><a href=/zh/>Chinese</a></li><li><a href=/he/>Hebrew</a></li></ul></li></ul><ul><li class=book-section-flat><a href=/docs/example/>Trang Chủ</a><ul><li><input type=checkbox id=section-a5446993f02613041412a70215fe0f5e class=toggle>
+<label for=section-a5446993f02613041412a70215fe0f5e class="flex justify-between"><a role=button>Interview</a></label><ul><li><input type=checkbox id=section-aeab3a266eabe870acc3c276e725ff38 class=toggle>
+<label for=section-aeab3a266eabe870acc3c276e725ff38 class="flex justify-between"><a href=/docs/example/collapsed/3rd-level/>C++</a></label><ul></ul></li></ul></li></ul></li></ul><ul><li><a href=/posts/>Competitive Programming</a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label><h3>Strings</h3><label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav><ul><li class=book-section-flat><strong>Categories</strong><ul></ul></li><li class=book-section-flat><strong>Tags</strong><ul><li class="flex justify-between"><a href=/tags/2d/>2d</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/binary-search/>Binary Search</a>
+<span>5</span></li><li class="flex justify-between"><a href=/tags/brute-force/>Brute Force</a>
+<span>3</span></li><li class="flex justify-between"><a href=/tags/combinatorics/>Combinatorics</a>
+<span>5</span></li><li class="flex justify-between"><a href=/tags/connected-component/>Connected Component</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/constructive-algorithms/>Constructive Algorithms</a>
+<span>4</span></li><li class="flex justify-between"><a href=/tags/cp/>Cp</a>
+<span>62</span></li><li class="flex justify-between"><a href=/tags/cycle/>Cycle</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/data-structure/>Data Structure</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/dfs-and-similar/>Dfs and Similar</a>
+<span>6</span></li><li class="flex justify-between"><a href=/tags/digit/>Digit</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/dirichlet/>Dirichlet</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/dp/>Dp</a>
+<span>19</span></li><li class="flex justify-between"><a href=/tags/dsu/>Dsu</a>
+<span>3</span></li><li class="flex justify-between"><a href=/tags/fenwick/>Fenwick</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/geometry/>Geometry</a>
+<span>3</span></li><li class="flex justify-between"><a href=/tags/graph/>Graph</a>
+<span>4</span></li><li class="flex justify-between"><a href=/tags/greedy/>Greedy</a>
+<span>5</span></li><li class="flex justify-between"><a href=/tags/hashing/>Hashing</a>
+<span>3</span></li><li class="flex justify-between"><a href=/tags/implementation/>Implementation</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/indexed_set/>Indexed_set</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/interactive/>Interactive</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/lazy/>Lazy</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/lca/>Lca</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/lcs/>Lcs</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/math/>Math</a>
+<span>3</span></li><li class="flex justify-between"><a href=/tags/median/>Median</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/mex/>Mex</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/number-theory/>Number Theory</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/palindrome/>Palindrome</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/path-compression/>Path-Compression</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/pending/>Pending</a>
+<span>13</span></li><li class="flex justify-between"><a href=/tags/permutation/>Permutation</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/real-values/>Real Values</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/recursion/>Recursion</a>
+<span>3</span></li><li class="flex justify-between"><a href=/tags/segment-tree/>Segment Tree</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/strings/>Strings</a>
+<span>5</span></li><li class="flex justify-between"><a href=/tags/swap/>Swap</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/theory-number/>Theory Number</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/tree/>Tree</a>
+<span>5</span></li><li class="flex justify-between"><a href=/tags/trie/>Trie</a>
+<span>2</span></li></ul></li></ul></nav></aside></header><article class="markdown book-post"><h2><a href=/posts/2021-11-03-FindingBorders/>Problem: Finding Borders</a></h2><div class=text-small><a href=/tags/cp/>Cp</a>,
+<a href=/tags/strings/>Strings</a>,
+<a href=/tags/hashing/>Hashing</a></div><p><p>Cho chuỗi s. Tìm tất cả độ dài của các chuỗi mà nó vừa là tiền tố, vừa là hậu tố của chuỗi s.</p><p><strong>Ràng buộc</strong></p><pre tabindex=0><code>1≤n≤1e6
+</code></pre><p><strong>Input</strong></p><pre tabindex=0><code>abcababcab
+</code></pre><p><strong>Output</strong></p><pre tabindex=0><code>2 5
+</code></pre><a href=/posts/2021-11-03-FindingBorders/>...</a></p></article><article class="markdown book-post"><h2><a href=/posts/2021-11-03-SearchEngine/>Problem: Search Engine</a></h2><div class=text-small><a href=/tags/cp/>Cp</a>,
+<a href=/tags/strings/>Strings</a>,
+<a href=/tags/trie/>Trie</a></div><p><p>Cho mảng n phần tử, mỗi phần tử gồm 1 chuỗi và 1 trọng số. Cho q truy vấn, mỗi truy vấn là một chuỗi x.
+Tìm chuỗi y trong mảng a sao cho x là tiền tố của y và trọng số của y là lớn nhất có thể.</p><p><strong>Ràng buộc</strong></p><pre tabindex=0><code>1 ≤ n, weight, len(s), len(t) ≤ 1e6
+1 ≤ q ≤ 1e5
+total length of all strings in database entries ≤ 1e6
+total length of all query strings ≤ 1e6
+</code></pre><a href=/posts/2021-11-03-SearchEngine/>...</a></p></article><article class="markdown book-post"><h2><a href=/posts/2021-11-03-StringMatching/>Problem: String Matching</a></h2><div class=text-small><a href=/tags/cp/>Cp</a>,
+<a href=/tags/strings/>Strings</a>,
+<a href=/tags/hashing/>Hashing</a></div><p><p>Cho một chuỗi và mẫu. Đếm số vị trí mẫu xuất hiện trong chuỗi.</p><p><strong>Ràng buộc</strong></p><pre tabindex=0><code>1≤n,m≤1e6
+</code></pre><p><strong>Input</strong></p><pre tabindex=0><code>saippuakauppias
+pp
+</code></pre><p><strong>Output</strong></p><pre tabindex=0><code>2
+</code></pre><a href=/posts/2021-11-03-StringMatching/>...</a></p></article><article class="markdown book-post"><h2><a href=/posts/2021-11-02-StringSubsequences/>Problem: String Subsequences</a></h2><div class=text-small><a href=/tags/cp/>Cp</a>,
+<a href=/tags/dp/>Dp</a>,
+<a href=/tags/strings/>Strings</a></div><p><p>Cho chuỗi <code>s1</code> có độ dài <code>3</code>, <code>s2</code> có độ dài <code>&lt;=1e5</code>. Tìm số <code>s2.subsequence(s1)</code>.</p><a href=/posts/2021-11-02-StringSubsequences/>...</a></p></article><article class="markdown book-post"><h2><a href=/posts/2021-11-03-WordCombinations/>Problem: Word Combinations</a></h2><div class=text-small><a href=/tags/cp/>Cp</a>,
+<a href=/tags/strings/>Strings</a>,
+<a href=/tags/trie/>Trie</a>,
+<a href=/tags/dp/>Dp</a></div><p><p>Cho 1 chuỗi s và n chuỗi. Hỏi có bao nhiêu cách tạo nên chuỗi s từ các chuỗi trong n chuỗi. Kết quả được lấy dư cho <code>1e9 + 7</code>.</p><p><strong>Ràng buộc</strong></p><pre tabindex=0><code>1≤n≤5000 
+1≤k≤1e5
+the total length of the words is at most 1e6
+</code></pre><p><strong>Input</strong></p><pre tabindex=0><code>4
+ab
+abab
+c
+cb
+</code></pre><p><strong>Output</strong></p><pre tabindex=0><code>2
+</code></pre><a href=/posts/2021-11-03-WordCombinations/>...</a></p></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav><ul><li class=book-section-flat><strong>Categories</strong><ul></ul></li><li class=book-section-flat><strong>Tags</strong><ul><li class="flex justify-between"><a href=/tags/2d/>2d</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/binary-search/>Binary Search</a>
+<span>5</span></li><li class="flex justify-between"><a href=/tags/brute-force/>Brute Force</a>
+<span>3</span></li><li class="flex justify-between"><a href=/tags/combinatorics/>Combinatorics</a>
+<span>5</span></li><li class="flex justify-between"><a href=/tags/connected-component/>Connected Component</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/constructive-algorithms/>Constructive Algorithms</a>
+<span>4</span></li><li class="flex justify-between"><a href=/tags/cp/>Cp</a>
+<span>62</span></li><li class="flex justify-between"><a href=/tags/cycle/>Cycle</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/data-structure/>Data Structure</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/dfs-and-similar/>Dfs and Similar</a>
+<span>6</span></li><li class="flex justify-between"><a href=/tags/digit/>Digit</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/dirichlet/>Dirichlet</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/dp/>Dp</a>
+<span>19</span></li><li class="flex justify-between"><a href=/tags/dsu/>Dsu</a>
+<span>3</span></li><li class="flex justify-between"><a href=/tags/fenwick/>Fenwick</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/geometry/>Geometry</a>
+<span>3</span></li><li class="flex justify-between"><a href=/tags/graph/>Graph</a>
+<span>4</span></li><li class="flex justify-between"><a href=/tags/greedy/>Greedy</a>
+<span>5</span></li><li class="flex justify-between"><a href=/tags/hashing/>Hashing</a>
+<span>3</span></li><li class="flex justify-between"><a href=/tags/implementation/>Implementation</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/indexed_set/>Indexed_set</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/interactive/>Interactive</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/lazy/>Lazy</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/lca/>Lca</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/lcs/>Lcs</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/math/>Math</a>
+<span>3</span></li><li class="flex justify-between"><a href=/tags/median/>Median</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/mex/>Mex</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/number-theory/>Number Theory</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/palindrome/>Palindrome</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/path-compression/>Path-Compression</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/pending/>Pending</a>
+<span>13</span></li><li class="flex justify-between"><a href=/tags/permutation/>Permutation</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/real-values/>Real Values</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/recursion/>Recursion</a>
+<span>3</span></li><li class="flex justify-between"><a href=/tags/segment-tree/>Segment Tree</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/strings/>Strings</a>
+<span>5</span></li><li class="flex justify-between"><a href=/tags/swap/>Swap</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/theory-number/>Theory Number</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/tree/>Tree</a>
+<span>5</span></li><li class="flex justify-between"><a href=/tags/trie/>Trie</a>
+<span>2</span></li></ul></li></ul></nav></div></aside></main></body></html>

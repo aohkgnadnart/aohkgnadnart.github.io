@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Binary Search on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/binary-search/</link><description>Recent content in Binary Search on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/binary-search/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: Guess the Permutation</title><link>http://localhost:1313/posts/2021-11-15-GuessthePermutation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-15-GuessthePermutation/</guid><description>&lt;p>Cho mảng gồm &lt;code>n&lt;/code> phần tử tăng dần từ &lt;code>1&lt;/code> tới &lt;code>n&lt;/code>. Có các phân đoạn &lt;code>[i, j - 1]&lt;/code> và &lt;code>[j, k]&lt;/code> đã bị đảo ngược lại(&lt;code>i &amp;lt; j &amp;lt; k&lt;/code> và &lt;code>j - i &amp;gt; 1&lt;/code>).
+Bạn được phép hỏi xem đoạn &lt;code>[l, r]&lt;/code> có bao nhiêu cặp nghịch thế. Số lần hỏi nhiều nhất là &lt;code>40&lt;/code>.
+Tìm &lt;code>i, j, k&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4≤n≤1e9
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2 
+5 
+4 
+3 
+3 
+5 
+2 
+2 
+1 
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>? 1 5
+? 2 5
+? 3 5
+! 1 3 5
+? 1 5
+? 2 5
+? 3 5
+! 2 4 5
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Korney Korneevich and XOR</title><link>http://localhost:1313/posts/2021-10-28-KorneyKorneevichandXOR/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-28-KorneyKorneevichandXOR/</guid><description>&lt;p>Cho mảng a gồm n &lt;code>(n &amp;lt;= 1e6)&lt;/code> số nguyên &lt;code>(0 &amp;lt;= a[i] &amp;lt;= 5000)&lt;/code>. Xuất ra tất cả giá trị xor của tất cả mảng con(subsequence) tăng dần trong mảng.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤n≤1e6
+0≤ai≤5000
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+4 2 2 4
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+0 2 4 6 
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Longest Y</title><link>http://localhost:1313/posts/2021-12-03-LongestY/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-03-LongestY/</guid><description>&lt;p>Cho một chuỗi &lt;code>S&lt;/code> có gồm kí tự &lt;code>'Y'&lt;/code> và &lt;code>'.'&lt;/code>. Bạn có thể thực hiện thao tác sau với số lần &lt;code>[0:k]&lt;/code>: đổi chỗ &lt;code>2&lt;/code> phần tử liền kề.&lt;/p>
+&lt;p>Số &lt;code>'Y'&lt;/code> liên tiếp lớn nhất có thể là bao nhiêu, sau các hoạt động.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2 &amp;lt;= |s| &amp;lt;= 2e5
+s[i] = &amp;#39;Y&amp;#39; or &amp;#39;.&amp;#39;
+0 &amp;lt;= k &amp;lt;= 1e12
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>YY...Y.Y.Y.
+2
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Nature Reserve</title><link>http://localhost:1313/posts/2021-12-07-NatureReserve/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-07-NatureReserve/</guid><description>&lt;p>Cho tọa độ &lt;code>n&lt;/code> điểm trên mặt phẳng Oxy. Tìm đường tròn có bán kính nhỏ nhất chứa &lt;code>n&lt;/code> điểm này, và đường tròn này có đúng &lt;code>1&lt;/code> giao điểm với đường thẳng &lt;code>y = 0&lt;/code>.&lt;/p>
+&lt;p>Xuất ra bán kính (sai số không quá &lt;code>1e-6&lt;/code>). Nếu không tồn tại đường tròn phù hợp yêu cầu, xuất &lt;code>-1&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 &amp;lt;= n &amp;lt;= 1e5
+-1e7 &amp;lt;= x[i], y[i] &amp;lt;= 1e7
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+0 1
+1 1
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>0.625
+&lt;/code>&lt;/pre></description></item><item><title>Problem: New Scanning Device</title><link>http://localhost:1313/posts/2021-11-24-NewScanningDevice/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-24-NewScanningDevice/</guid><description>&lt;p>Cho lưới 1e9 x 1e9 có các ô đơn vị 1 x 1. Có một hình chữ nhật gồm các ô đơn vị được tô màu. Hình chữ nhật này có các cạnh song song với cạnh của lưới. Bạn được phép hỏi số ô tô màu trong hình chữ nhật (a, b) (c, d), 2 tọa này lần lượt là tọa độ góc trên bên trái và góc dưới bên phải. Số lần hỏi không quá 66. Hãy tìm ra (a, b) (c, d) của hình chữ nhật được tô màu.&lt;/p></description></item></channel></rss>

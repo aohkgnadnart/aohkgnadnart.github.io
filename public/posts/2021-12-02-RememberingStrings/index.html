@@ -1,0 +1,54 @@
+<!doctype html><html lang=en dir=ltr><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content='Bạn có nhiều tập hợp n chuỗi có cùng độ dài, bao gồm các chữ cái tiếng Anh viết thường. Chúng ta sẽ nói rằng những chuỗi đó dễ nhớ nếu đối với mỗi chuỗi có một số vị trí i và một số chữ cái c của bảng chữ cái tiếng Anh, sao cho chuỗi này là chuỗi duy nhất trong tập hợp đa có chữ c ở vị trí i.
+Ví dụ: một tập hợp nhiều chuỗi {"abc", "aba", "adc", "ada"} không dễ nhớ. Và multiset {"abc", "ada", "ssa"} rất dễ nhớ vì:
+chuỗi đầu tiên là chuỗi duy nhất có ký tự c ở vị trí 3 ;
+chuỗi thứ hai là chuỗi duy nhất có ký tự d ở vị trí 2 ;
+chuỗi thứ ba là chuỗi duy nhất có ký tự s ở vị trí 2 .
+Bạn muốn thay đổi một chút bộ đa năng của mình để dễ nhớ. Đối với aij tiền xu, bạn có thể thay đổi nhân vật trong j vị trí -thứ i của chuỗi -thứ vào bất kỳ chữ cái thường khác của bảng chữ cái tiếng Anh. Tìm số tiền tối thiểu bạn phải trả là bao nhiêu để làm cho tập hợp nhiều chuỗi dễ nhớ.
+Ràng buộc
+1 <= n, m <= 20
+0 <= aij <= 1e6
+Input
+4 5
+abcde
+abcde
+abcde
+abcde
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+Output
+3
+'><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="http://localhost:1313/posts/2021-12-02-RememberingStrings/"><meta property="og:site_name" content="Aohkgnadnart Blog"><meta property="og:title" content="Problem: Remembering Strings"><meta property="og:description" content='Bạn có nhiều tập hợp n chuỗi có cùng độ dài, bao gồm các chữ cái tiếng Anh viết thường. Chúng ta sẽ nói rằng những chuỗi đó dễ nhớ nếu đối với mỗi chuỗi có một số vị trí i và một số chữ cái c của bảng chữ cái tiếng Anh, sao cho chuỗi này là chuỗi duy nhất trong tập hợp đa có chữ c ở vị trí i.
+Ví dụ: một tập hợp nhiều chuỗi {"abc", "aba", "adc", "ada"} không dễ nhớ. Và multiset {"abc", "ada", "ssa"} rất dễ nhớ vì: chuỗi đầu tiên là chuỗi duy nhất có ký tự c ở vị trí 3 ; chuỗi thứ hai là chuỗi duy nhất có ký tự d ở vị trí 2 ; chuỗi thứ ba là chuỗi duy nhất có ký tự s ở vị trí 2 .
+Bạn muốn thay đổi một chút bộ đa năng của mình để dễ nhớ. Đối với aij tiền xu, bạn có thể thay đổi nhân vật trong j vị trí -thứ i của chuỗi -thứ vào bất kỳ chữ cái thường khác của bảng chữ cái tiếng Anh. Tìm số tiền tối thiểu bạn phải trả là bao nhiêu để làm cho tập hợp nhiều chuỗi dễ nhớ.
+Ràng buộc
+1 <= n, m <= 20 0 <= aij <= 1e6 Input
+4 5 abcde abcde abcde abcde 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 Output
+3'><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:modified_time" content="2025-04-02T13:02:07+07:00"><meta property="article:tag" content="Cp"><meta property="article:tag" content="Pending"><meta property="article:tag" content="Graph"><title>Problem: Remembering Strings | Aohkgnadnart Blog</title>
+<link rel=icon href=/favicon.png><link rel=manifest href=/manifest.json><link rel=canonical href=http://localhost:1313/posts/2021-12-02-RememberingStrings/><link rel=stylesheet href=/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin=anonymous><script defer src=/fuse.min.js></script><script defer src=/en.search.min.13e139159b5ca30479736515fd7347cdfcfa90e8d16be14160001aec6b9261cd.js integrity="sha256-E+E5FZtcowR5c2UV/XNHzfz6kOjRa+FBYAAa7GuSYc0=" crossorigin=anonymous></script><script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>Aohkgnadnart Blog</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
+<label for=languages class="flex justify-between"><a role=button class="flex align-center"><img src=/svg/translate.svg class=book-icon alt=Languages>
+English</a></label><ul><li><a href=/zh/>Chinese</a></li><li><a href=/he/>Hebrew</a></li></ul></li></ul><ul><li class=book-section-flat><a href=/docs/example/>Trang Chủ</a><ul><li><input type=checkbox id=section-a5446993f02613041412a70215fe0f5e class=toggle>
+<label for=section-a5446993f02613041412a70215fe0f5e class="flex justify-between"><a role=button>Interview</a></label><ul><li><input type=checkbox id=section-aeab3a266eabe870acc3c276e725ff38 class=toggle>
+<label for=section-aeab3a266eabe870acc3c276e725ff38 class="flex justify-between"><a href=/docs/example/collapsed/3rd-level/>C++</a></label><ul></ul></li></ul></li></ul></li></ul><ul><li><a href=/posts/>Competitive Programming</a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label><h3>Problem: Remembering Strings</h3><label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents></nav></aside></header><article class="markdown book-post"><h2>Problem: Remembering Strings</h2><div class=text-small><a href=/tags/cp/>Cp</a>,
+<a href=/tags/pending/>Pending</a>,
+<a href=/tags/graph/>Graph</a></div><div class=book-post-content><p>Bạn có nhiều tập hợp <code>n</code> chuỗi có cùng độ dài, bao gồm các chữ cái tiếng Anh viết thường. Chúng ta sẽ nói rằng những chuỗi đó dễ nhớ nếu đối với mỗi chuỗi có một số vị trí <code>i</code> và một số chữ cái <code>c</code> của bảng chữ cái tiếng Anh, sao cho chuỗi này là chuỗi duy nhất trong tập hợp đa có chữ <code>c</code> ở vị trí <code>i</code>.</p><p>Ví dụ: một tập hợp nhiều chuỗi <code>{"abc", "aba", "adc", "ada"}</code> không dễ nhớ. Và multiset <code>{"abc", "ada", "ssa"}</code> rất dễ nhớ vì:
+chuỗi đầu tiên là chuỗi duy nhất có ký tự <code>c</code> ở vị trí <code>3</code> ;
+chuỗi thứ hai là chuỗi duy nhất có ký tự <code>d</code> ở vị trí <code>2</code> ;
+chuỗi thứ ba là chuỗi duy nhất có ký tự <code>s</code> ở vị trí <code>2</code> .</p><p>Bạn muốn thay đổi một chút bộ đa năng của mình để dễ nhớ. Đối với <code>aij</code> tiền xu, bạn có thể thay đổi nhân vật trong <code>j</code> vị trí -thứ <code>i</code> của chuỗi -thứ vào bất kỳ chữ cái thường khác của bảng chữ cái tiếng Anh. Tìm số tiền tối thiểu bạn phải trả là bao nhiêu để làm cho tập hợp nhiều chuỗi dễ nhớ.</p><p><strong>Ràng buộc</strong></p><pre tabindex=0><code>1 &lt;= n, m &lt;= 20
+0 &lt;= aij &lt;= 1e6
+</code></pre><p><strong>Input</strong></p><pre tabindex=0><code>4 5
+abcde
+abcde
+abcde
+abcde
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+</code></pre><p><strong>Output</strong></p><pre tabindex=0><code>3
+</code></pre><p><em>Submit
+<a href=https://codeforces.com/problemset/problem/543/C>tại đây</a></em></p><p><strong>Hướng dẫn</strong></p><p><strong>Code</strong></p><ul><li>Độ phưc tạp <strong>O()</strong></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp></code></pre></div></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/aohkgnadnart/aohkgnadnart.github.io/commit/a0c8e667603f813f954620fbb5ceb647c3b574bd title='Last modified by aohkgnadnart | April 2, 2025' target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt>
+<span>April 2, 2025</span></a></div><div><a class="flex align-center" href=#ZgotmplZ target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt>
+<span>Edit this page</span></a></div></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents></nav></div></aside></main></body></html>

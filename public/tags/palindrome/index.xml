@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Palindrome on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/palindrome/</link><description>Recent content in Palindrome on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/palindrome/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: Palindrome</title><link>http://localhost:1313/posts/2021-12-03-Palindrome/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-03-Palindrome/</guid><description>&lt;p>Một xâu &lt;code>S&lt;/code> chỉ chứa kí tự latin in thường.
+Nếu có thể chặt xâu &lt;code>S&lt;/code> thành &lt;code>3&lt;/code> xâu con không rỗng và cả &lt;code>3&lt;/code> xâu con đều là xâu đối xứng thì xuất &lt;code>YES&lt;/code>, ngược lại xuất &lt;code>NO&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>|s| &amp;lt;= 5000
+&amp;#39;a&amp;#39; &amp;lt;= s[i] &amp;lt;= &amp;#39;z&amp;#39;
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>abadddddz
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>YES
+&lt;/code>&lt;/pre></description></item></channel></rss>

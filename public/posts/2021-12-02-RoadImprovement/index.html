@@ -1,0 +1,108 @@
+<!doctype html><html lang=en dir=ltr><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Đất nước có n thành phố và n - 1 con đường hai chiều, bạn có thể đi từ mọi thành phố này đến bất kỳ thành phố nào khác nếu bạn chỉ di chuyển dọc theo các con đường. Các thành phố được đánh số bằng các số nguyên từ 1 đến n.
+Tất cả các con đường ban đầu đều xấu, nhưng chính phủ muốn cải thiện tình trạng của một số con đường. Chúng tôi sẽ cho rằng người dân hài lòng về việc cải tạo đường nếu con đường từ thủ đô nằm ở thành phố x đến bất kỳ thành phố nào khác có nhiều nhất một con đường xấu.
+Nhiệm vụ của bạn là với mọi x có thể xác định số cách cải thiện chất lượng của một số con đường để đáp ứng điều kiện của người dân. Vì những giá trị đó có thể khá lớn, bạn cần in từng mô-đun giá trị 1000000007.
+Ràng buộc
+n <= 2e5
+Input
+3
+1 1
+Output
+4 3 3
+"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="http://localhost:1313/posts/2021-12-02-RoadImprovement/"><meta property="og:site_name" content="Aohkgnadnart Blog"><meta property="og:title" content="Problem: Road Improvement"><meta property="og:description" content="Đất nước có n thành phố và n - 1 con đường hai chiều, bạn có thể đi từ mọi thành phố này đến bất kỳ thành phố nào khác nếu bạn chỉ di chuyển dọc theo các con đường. Các thành phố được đánh số bằng các số nguyên từ 1 đến n.
+Tất cả các con đường ban đầu đều xấu, nhưng chính phủ muốn cải thiện tình trạng của một số con đường. Chúng tôi sẽ cho rằng người dân hài lòng về việc cải tạo đường nếu con đường từ thủ đô nằm ở thành phố x đến bất kỳ thành phố nào khác có nhiều nhất một con đường xấu.
+Nhiệm vụ của bạn là với mọi x có thể xác định số cách cải thiện chất lượng của một số con đường để đáp ứng điều kiện của người dân. Vì những giá trị đó có thể khá lớn, bạn cần in từng mô-đun giá trị 1000000007.
+Ràng buộc
+n <= 2e5 Input
+3 1 1 Output
+4 3 3"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:modified_time" content="2025-04-02T13:02:07+07:00"><meta property="article:tag" content="Cp"><meta property="article:tag" content="Tree"><meta property="article:tag" content="Dp"><meta property="article:tag" content="Dfs and Similar"><title>Problem: Road Improvement | Aohkgnadnart Blog</title>
+<link rel=icon href=/favicon.png><link rel=manifest href=/manifest.json><link rel=canonical href=http://localhost:1313/posts/2021-12-02-RoadImprovement/><link rel=stylesheet href=/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin=anonymous><script defer src=/fuse.min.js></script><script defer src=/en.search.min.13e139159b5ca30479736515fd7347cdfcfa90e8d16be14160001aec6b9261cd.js integrity="sha256-E+E5FZtcowR5c2UV/XNHzfz6kOjRa+FBYAAa7GuSYc0=" crossorigin=anonymous></script><script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>Aohkgnadnart Blog</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
+<label for=languages class="flex justify-between"><a role=button class="flex align-center"><img src=/svg/translate.svg class=book-icon alt=Languages>
+English</a></label><ul><li><a href=/zh/>Chinese</a></li><li><a href=/he/>Hebrew</a></li></ul></li></ul><ul><li class=book-section-flat><a href=/docs/example/>Trang Chủ</a><ul><li><input type=checkbox id=section-a5446993f02613041412a70215fe0f5e class=toggle>
+<label for=section-a5446993f02613041412a70215fe0f5e class="flex justify-between"><a role=button>Interview</a></label><ul><li><input type=checkbox id=section-aeab3a266eabe870acc3c276e725ff38 class=toggle>
+<label for=section-aeab3a266eabe870acc3c276e725ff38 class="flex justify-between"><a href=/docs/example/collapsed/3rd-level/>C++</a></label><ul></ul></li></ul></li></ul></li></ul><ul><li><a href=/posts/>Competitive Programming</a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label><h3>Problem: Road Improvement</h3><label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents></nav></aside></header><article class="markdown book-post"><h2>Problem: Road Improvement</h2><div class=text-small><a href=/tags/cp/>Cp</a>,
+<a href=/tags/tree/>Tree</a>,
+<a href=/tags/dp/>Dp</a>,
+<a href=/tags/dfs-and-similar/>Dfs and Similar</a></div><div class=book-post-content><p>Đất nước có <code>n</code> thành phố và <code>n - 1</code> con đường hai chiều, bạn có thể đi từ mọi thành phố này đến bất kỳ thành phố nào khác nếu bạn chỉ di chuyển dọc theo các con đường. Các thành phố được đánh số bằng các số nguyên từ <code>1</code> đến <code>n</code>.</p><p>Tất cả các con đường ban đầu đều xấu, nhưng chính phủ muốn cải thiện tình trạng của một số con đường. Chúng tôi sẽ cho rằng người dân hài lòng về việc cải tạo đường nếu con đường từ thủ đô nằm ở thành phố <code>x</code> đến bất kỳ thành phố nào khác có nhiều nhất một con đường xấu.</p><p>Nhiệm vụ của bạn là với mọi <code>x</code> có thể xác định số cách cải thiện chất lượng của một số con đường để đáp ứng điều kiện của người dân. Vì những giá trị đó có thể khá lớn, bạn cần in từng mô-đun giá trị <code>1000000007</code>.</p><p><strong>Ràng buộc</strong></p><pre tabindex=0><code>n &lt;= 2e5
+</code></pre><p><strong>Input</strong></p><pre tabindex=0><code>3
+1 1
+</code></pre><p><strong>Output</strong></p><pre tabindex=0><code>4 3 3
+</code></pre><p><em>Submit
+<a href=https://codeforces.com/problemset/problem/543/D>tại đây</a></em></p><p><strong>Hướng dẫn</strong></p><p><strong>Code</strong></p><ul><li>Độ phưc tạp <strong>O()</strong></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;bits/stdc++.h&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>using</span> <span style=color:#66d9ef>namespace</span> std;
+</span></span><span style=display:flex><span><span style=color:#75715e>#define debug(x) cerr &lt;&lt; #x &lt;&lt; &#34; = &#34; &lt;&lt; x &lt;&lt; endl;
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#define int long long
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#66d9ef>int</span> N <span style=color:#f92672>=</span> <span style=color:#ae81ff>2e5</span>;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#66d9ef>int</span> M <span style=color:#f92672>=</span> (<span style=color:#66d9ef>int</span>)<span style=color:#ae81ff>1e9</span> <span style=color:#f92672>+</span> <span style=color:#ae81ff>7</span>;
+</span></span><span style=display:flex><span>vector<span style=color:#f92672>&lt;</span><span style=color:#66d9ef>int</span><span style=color:#f92672>&gt;</span> adj[N <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>];
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> upp[N <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>];
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> doww[N <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>];
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> all[N <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>];
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> allM[N <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>];
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> n;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>euclidExtend</span>(<span style=color:#66d9ef>int</span> a, <span style=color:#66d9ef>int</span> b){
+</span></span><span style=display:flex><span>    <span style=color:#75715e>//tim nghiem pt ax + by = 1 trong do gcd(a, b) = 1
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#75715e>//nghiem co the am
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>if</span>(a <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>) <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> y <span style=color:#f92672>=</span> euclidExtend(b <span style=color:#f92672>%</span> a, a);
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> (<span style=color:#ae81ff>1</span> <span style=color:#f92672>-</span> b <span style=color:#f92672>*</span> y) <span style=color:#f92672>/</span> a;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>divide</span>(<span style=color:#66d9ef>int</span> a, <span style=color:#66d9ef>int</span> b){
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> u <span style=color:#f92672>=</span> __gcd(b, M);
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> z <span style=color:#f92672>=</span> (euclidExtend(b <span style=color:#f92672>/</span> u, M <span style=color:#f92672>/</span> u) <span style=color:#f92672>+</span> M <span style=color:#f92672>*</span> M) <span style=color:#f92672>%</span> M;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> a <span style=color:#f92672>*</span> z <span style=color:#f92672>%</span> M;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>dfs</span>(<span style=color:#66d9ef>int</span> u, <span style=color:#66d9ef>int</span> p){
+</span></span><span style=display:flex><span>    upp[u] <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>auto</span> v: adj[u]){
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span>(v <span style=color:#f92672>==</span> p) <span style=color:#66d9ef>continue</span>;
+</span></span><span style=display:flex><span>        dfs(v, u);
+</span></span><span style=display:flex><span>        upp[u] <span style=color:#f92672>=</span> upp[u] <span style=color:#f92672>*</span> (upp[v] <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>) <span style=color:#f92672>%</span> M;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>dfs1</span>(<span style=color:#66d9ef>int</span> u, <span style=color:#66d9ef>int</span> p){
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span>(doww[u] <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span> <span style=color:#f92672>==</span> M){
+</span></span><span style=display:flex><span>        allM[u]<span style=color:#f92672>++</span>;
+</span></span><span style=display:flex><span>        all[u] <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>else</span> all[u] <span style=color:#f92672>=</span> (doww[u] <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>) <span style=color:#f92672>%</span> M;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>auto</span> v: adj[u]){
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span>(v <span style=color:#f92672>==</span> p) <span style=color:#66d9ef>continue</span>;
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span>(upp[v] <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span> <span style=color:#f92672>==</span> M) allM[u]<span style=color:#f92672>++</span>;
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>else</span> all[u] <span style=color:#f92672>=</span> all[u] <span style=color:#f92672>*</span> (upp[v] <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>) <span style=color:#f92672>%</span> M;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>auto</span> v: adj[u]){
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span>(v <span style=color:#f92672>==</span> p) <span style=color:#66d9ef>continue</span>;
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span>(upp[v] <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span> <span style=color:#f92672>==</span> M){
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span>(allM[u] <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>1</span>) doww[v] <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>else</span> doww[v] <span style=color:#f92672>=</span> all[u];
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>else</span> doww[v] <span style=color:#f92672>=</span> divide((allM[u]<span style=color:#f92672>?</span> <span style=color:#ae81ff>0</span><span style=color:#f92672>:</span> all[u]), upp[v] <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>);
+</span></span><span style=display:flex><span>        dfs1(v, u);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>signed</span> <span style=color:#a6e22e>main</span>(){
+</span></span><span style=display:flex><span>    FILE <span style=color:#f92672>*</span>pFile <span style=color:#f92672>=</span> fopen(<span style=color:#e6db74>&#34;input.txt&#34;</span>, <span style=color:#e6db74>&#34;r&#34;</span>);
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span>(pFile <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nullptr</span>) freopen(<span style=color:#e6db74>&#34;input.txt&#34;</span>, <span style=color:#e6db74>&#34;r&#34;</span>, stdin);
+</span></span><span style=display:flex><span>    ios_base<span style=color:#f92672>::</span>sync_with_stdio(false);cin.tie(<span style=color:#66d9ef>nullptr</span>);
+</span></span><span style=display:flex><span>    cin <span style=color:#f92672>&gt;&gt;</span> n;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>int</span> i <span style=color:#f92672>=</span> <span style=color:#ae81ff>2</span>; i <span style=color:#f92672>&lt;=</span> n; i<span style=color:#f92672>++</span>){
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>int</span> p;
+</span></span><span style=display:flex><span>        cin <span style=color:#f92672>&gt;&gt;</span> p;
+</span></span><span style=display:flex><span>        adj[i].push_back(p);
+</span></span><span style=display:flex><span>        adj[p].push_back(i);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    dfs(<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>0</span>);
+</span></span><span style=display:flex><span>    dfs1(<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>0</span>);
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>int</span> i <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>; i <span style=color:#f92672>&lt;=</span> n; i<span style=color:#f92672>++</span>){
+</span></span><span style=display:flex><span><span style=color:#75715e>//            debug(i)
+</span></span></span><span style=display:flex><span><span style=color:#75715e>//            debug(doww[i])
+</span></span></span><span style=display:flex><span><span style=color:#75715e>//            debug(upp[i])
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#66d9ef>if</span>(allM[i]) cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;0 &#34;</span>;
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>else</span> cout <span style=color:#f92672>&lt;&lt;</span> all[i] <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34; &#34;</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/aohkgnadnart/aohkgnadnart.github.io/commit/a0c8e667603f813f954620fbb5ceb647c3b574bd title='Last modified by aohkgnadnart | April 2, 2025' target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt>
+<span>April 2, 2025</span></a></div><div><a class="flex align-center" href=#ZgotmplZ target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt>
+<span>Edit this page</span></a></div></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents></nav></div></aside></main></body></html>

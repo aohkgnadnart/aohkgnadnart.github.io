@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Median on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/median/</link><description>Recent content in Median on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/median/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: Longest Y</title><link>http://localhost:1313/posts/2021-12-03-LongestY/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-03-LongestY/</guid><description>&lt;p>Cho một chuỗi &lt;code>S&lt;/code> có gồm kí tự &lt;code>'Y'&lt;/code> và &lt;code>'.'&lt;/code>. Bạn có thể thực hiện thao tác sau với số lần &lt;code>[0:k]&lt;/code>: đổi chỗ &lt;code>2&lt;/code> phần tử liền kề.&lt;/p>
+&lt;p>Số &lt;code>'Y'&lt;/code> liên tiếp lớn nhất có thể là bao nhiêu, sau các hoạt động.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2 &amp;lt;= |s| &amp;lt;= 2e5
+s[i] = &amp;#39;Y&amp;#39; or &amp;#39;.&amp;#39;
+0 &amp;lt;= k &amp;lt;= 1e12
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>YY...Y.Y.Y.
+2
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+&lt;/code>&lt;/pre></description></item></channel></rss>

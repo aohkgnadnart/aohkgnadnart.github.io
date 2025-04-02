@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Geometry on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/geometry/</link><description>Recent content in Geometry on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/geometry/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: Kingdom of Cats</title><link>http://localhost:1313/posts/2021-12-03-Kingdom-of-Cats/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-03-Kingdom-of-Cats/</guid><description>&lt;p>Choa tọa độ n điểm trong mp Oxy. Tính số tứ giác lồi khác nhau được tạo ra.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤n≤50
+−1e9≤xi,yi≤1e9
+tổng n trong tất cả các test không quá 500
+n = 0 kết thúc chương trình
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>7 
+4 1 
+3 1 
+2 1 
+1 1 
+1 2 
+1 3 
+1 4 
+4 
+0 0 
+0 2 
+2 0 
+2 2 
+0
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>9 
+1
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Nature Reserve</title><link>http://localhost:1313/posts/2021-12-07-NatureReserve/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-07-NatureReserve/</guid><description>&lt;p>Cho tọa độ &lt;code>n&lt;/code> điểm trên mặt phẳng Oxy. Tìm đường tròn có bán kính nhỏ nhất chứa &lt;code>n&lt;/code> điểm này, và đường tròn này có đúng &lt;code>1&lt;/code> giao điểm với đường thẳng &lt;code>y = 0&lt;/code>.&lt;/p>
+&lt;p>Xuất ra bán kính (sai số không quá &lt;code>1e-6&lt;/code>). Nếu không tồn tại đường tròn phù hợp yêu cầu, xuất &lt;code>-1&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 &amp;lt;= n &amp;lt;= 1e5
+-1e7 &amp;lt;= x[i], y[i] &amp;lt;= 1e7
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+0 1
+1 1
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>0.625
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Olympic Sinh Viên 2019 - Không chuyên - Tam giác</title><link>http://localhost:1313/posts/2021-12-17-tamgiac/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-17-tamgiac/</guid><description>&lt;p>Với &lt;code>𝑘&lt;/code> thanh gỗ độ dài &lt;code>𝑙1, 𝑙2, … , 𝑙𝑘&lt;/code> có thể xếp được thành một hình tam giác nếu có cách phân chia &lt;code>𝑘&lt;/code> thanh gỗ thành ba tập khác rỗng,
+sau đó ghép nối các thanh gỗ trong cùng một tập thành một đoạn có độ dài là tổng độ dài các thanh gỗ trong tập,
+khi đó độ dài của ba đoạn đó là độ dài ba cạnh của một tam giác.&lt;/p>
+&lt;p>Hoàng có &lt;code>𝑛&lt;/code> thanh gỗ xếp thành một hàng từ trái sang phải với độ dài tương ứng là &lt;code>𝑑1, 𝑑2, … , 𝑑𝑛&lt;/code>,
+các thanh gỗ có độ dài đôi một khác nhau. Với một số nguyên &lt;code>𝑘&lt;/code> (&lt;code>𝑘 ≥ 3&lt;/code>),
+Hoàng muốn đếm xem có bao nhiêu cách chọn &lt;code>𝑘&lt;/code> thanh gỗ liên tiếp nhau mà &lt;code>𝑘&lt;/code> thanh gỗ này có có thể xếp được thành một hình tam giác&lt;/p>
+&lt;p>Yêu cầu: Cho &lt;code>𝑑1, 𝑑2, … , 𝑑𝑛&lt;/code> và số nguyên &lt;code>𝑘&lt;/code>. Hãy đếm số cách chọn &lt;code>𝑘&lt;/code> thanh gỗ liên tiếp nhau mà &lt;code>𝑘&lt;/code> thanh gỗ này có có thể xếp được thành một hình tam giác.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code> 𝑘 ≤ 𝑛 ≤ 1e5
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>6 3
+1 3 4 2 5 9
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+&lt;/code>&lt;/pre></description></item></channel></rss>

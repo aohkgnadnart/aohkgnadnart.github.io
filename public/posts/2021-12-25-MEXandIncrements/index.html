@@ -1,0 +1,62 @@
+<!doctype html><html lang=en dir=ltr><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Cho n số nguyên không âm. Bạn được phép thực hiện thao tác: chọn 1 phần tử và tăng nó thêm 1.
+Hãy tính số thao tác tối thiểu để tạo Mex(a, i) vỡi mỗi i thuộc [0, n] tức là i là số nguyên không âm nhỏ nhất không xuất hiện trong mảng a.
+Ràng buộc
+1≤t≤1e4
+1≤n≤2e5
+0≤ai≤n
+It is guaranteed that the sum of the values n over all test cases in the test does not exceed 2e5.
+Input
+5
+3
+0 1 3
+7
+0 1 2 3 4 3 2
+4
+3 0 0 0
+7
+4 6 2 3 5 0 5
+5
+4 0 1 0 4
+Output
+1 1 0 -1 
+1 1 2 2 1 0 2 6 
+3 0 1 4 3 
+1 0 -1 -1 -1 -1 -1 -1 
+2 1 0 2 -1 -1 
+"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="http://localhost:1313/posts/2021-12-25-MEXandIncrements/"><meta property="og:site_name" content="Aohkgnadnart Blog"><meta property="og:title" content="Problem: MEX and Increments"><meta property="og:description" content="Cho n số nguyên không âm. Bạn được phép thực hiện thao tác: chọn 1 phần tử và tăng nó thêm 1.
+Hãy tính số thao tác tối thiểu để tạo Mex(a, i) vỡi mỗi i thuộc [0, n] tức là i là số nguyên không âm nhỏ nhất không xuất hiện trong mảng a.
+Ràng buộc
+1≤t≤1e4 1≤n≤2e5 0≤ai≤n It is guaranteed that the sum of the values n over all test cases in the test does not exceed 2e5. Input
+5 3 0 1 3 7 0 1 2 3 4 3 2 4 3 0 0 0 7 4 6 2 3 5 0 5 5 4 0 1 0 4 Output
+1 1 0 -1 1 1 2 2 1 0 2 6 3 0 1 4 3 1 0 -1 -1 -1 -1 -1 -1 2 1 0 2 -1 -1"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:modified_time" content="2025-04-02T13:02:07+07:00"><meta property="article:tag" content="Cp"><meta property="article:tag" content="Pending"><meta property="article:tag" content="Mex"><title>Problem: MEX and Increments | Aohkgnadnart Blog</title>
+<link rel=icon href=/favicon.png><link rel=manifest href=/manifest.json><link rel=canonical href=http://localhost:1313/posts/2021-12-25-MEXandIncrements/><link rel=stylesheet href=/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin=anonymous><script defer src=/fuse.min.js></script><script defer src=/en.search.min.13e139159b5ca30479736515fd7347cdfcfa90e8d16be14160001aec6b9261cd.js integrity="sha256-E+E5FZtcowR5c2UV/XNHzfz6kOjRa+FBYAAa7GuSYc0=" crossorigin=anonymous></script><script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>Aohkgnadnart Blog</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
+<label for=languages class="flex justify-between"><a role=button class="flex align-center"><img src=/svg/translate.svg class=book-icon alt=Languages>
+English</a></label><ul><li><a href=/zh/>Chinese</a></li><li><a href=/he/>Hebrew</a></li></ul></li></ul><ul><li class=book-section-flat><a href=/docs/example/>Trang Chủ</a><ul><li><input type=checkbox id=section-a5446993f02613041412a70215fe0f5e class=toggle>
+<label for=section-a5446993f02613041412a70215fe0f5e class="flex justify-between"><a role=button>Interview</a></label><ul><li><input type=checkbox id=section-aeab3a266eabe870acc3c276e725ff38 class=toggle>
+<label for=section-aeab3a266eabe870acc3c276e725ff38 class="flex justify-between"><a href=/docs/example/collapsed/3rd-level/>C++</a></label><ul></ul></li></ul></li></ul></li></ul><ul><li><a href=/posts/>Competitive Programming</a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label><h3>Problem: MEX and Increments</h3><label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents></nav></aside></header><article class="markdown book-post"><h2>Problem: MEX and Increments</h2><div class=text-small><a href=/tags/cp/>Cp</a>,
+<a href=/tags/pending/>Pending</a>,
+<a href=/tags/mex/>Mex</a></div><div class=book-post-content><p>Cho <code>n</code> số nguyên không âm. Bạn được phép thực hiện thao tác: chọn <code>1</code> phần tử và tăng nó thêm <code>1</code>.</p><p>Hãy tính số thao tác tối thiểu để tạo <code>Mex(a, i)</code> vỡi mỗi i thuộc <code>[0, n]</code> tức là i là số nguyên không âm nhỏ nhất không xuất hiện trong mảng a.</p><p><strong>Ràng buộc</strong></p><pre tabindex=0><code>1≤t≤1e4
+1≤n≤2e5
+0≤ai≤n
+It is guaranteed that the sum of the values n over all test cases in the test does not exceed 2e5.
+</code></pre><p><strong>Input</strong></p><pre tabindex=0><code>5
+3
+0 1 3
+7
+0 1 2 3 4 3 2
+4
+3 0 0 0
+7
+4 6 2 3 5 0 5
+5
+4 0 1 0 4
+</code></pre><p><strong>Output</strong></p><pre tabindex=0><code>1 1 0 -1 
+1 1 2 2 1 0 2 6 
+3 0 1 4 3 
+1 0 -1 -1 -1 -1 -1 -1 
+2 1 0 2 -1 -1 
+</code></pre><p><em>Submit
+<a href=https://codeforces.com/contest/1619/problem/E>tại đây</a></em></p><p><strong>Hướng dẫn</strong></p><p><strong>Code</strong></p><ul><li>Độ phưc tạp <strong>O()</strong></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp></code></pre></div></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/aohkgnadnart/aohkgnadnart.github.io/commit/a0c8e667603f813f954620fbb5ceb647c3b574bd title='Last modified by aohkgnadnart | April 2, 2025' target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt>
+<span>April 2, 2025</span></a></div><div><a class="flex align-center" href=#ZgotmplZ target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt>
+<span>Edit this page</span></a></div></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents></nav></div></aside></main></body></html>

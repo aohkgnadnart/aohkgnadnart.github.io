@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Theory Number on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/theory-number/</link><description>Recent content in Theory Number on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/theory-number/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: GCD Problem</title><link>http://localhost:1313/posts/2021-12-17-GCDProblem/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-17-GCDProblem/</guid><description>&lt;p>Cho số nguyên dương &lt;code>n&lt;/code>. Tìm &lt;code>3&lt;/code> số nguyên dương phân biệt &lt;code>a&lt;/code>, &lt;code>b&lt;/code>, &lt;code>c&lt;/code> sao cho &lt;code>a + b + c = n&lt;/code> và &lt;code>gcd(a, b) = c&lt;/code>. hoặc cho biết không thể tìm thấy.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤105
+10≤n≤1e9
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>6
+18
+63
+73
+91
+438
+122690412
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>6 9 3
+21 39 3
+29 43 1
+49 35 7
+146 219 73
+28622 122661788 2
+&lt;/code>&lt;/pre></description></item></channel></rss>

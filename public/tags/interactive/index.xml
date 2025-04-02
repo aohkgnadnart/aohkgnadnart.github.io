@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Interactive on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/interactive/</link><description>Recent content in Interactive on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/interactive/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: Guess the Permutation</title><link>http://localhost:1313/posts/2021-11-15-GuessthePermutation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-15-GuessthePermutation/</guid><description>&lt;p>Cho mảng gồm &lt;code>n&lt;/code> phần tử tăng dần từ &lt;code>1&lt;/code> tới &lt;code>n&lt;/code>. Có các phân đoạn &lt;code>[i, j - 1]&lt;/code> và &lt;code>[j, k]&lt;/code> đã bị đảo ngược lại(&lt;code>i &amp;lt; j &amp;lt; k&lt;/code> và &lt;code>j - i &amp;gt; 1&lt;/code>).
+Bạn được phép hỏi xem đoạn &lt;code>[l, r]&lt;/code> có bao nhiêu cặp nghịch thế. Số lần hỏi nhiều nhất là &lt;code>40&lt;/code>.
+Tìm &lt;code>i, j, k&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4≤n≤1e9
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2 
+5 
+4 
+3 
+3 
+5 
+2 
+2 
+1 
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>? 1 5
+? 2 5
+? 3 5
+! 1 3 5
+? 1 5
+? 2 5
+? 3 5
+! 2 4 5
+&lt;/code>&lt;/pre></description></item><item><title>Problem: New Scanning Device</title><link>http://localhost:1313/posts/2021-11-24-NewScanningDevice/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-24-NewScanningDevice/</guid><description>&lt;p>Cho lưới 1e9 x 1e9 có các ô đơn vị 1 x 1. Có một hình chữ nhật gồm các ô đơn vị được tô màu. Hình chữ nhật này có các cạnh song song với cạnh của lưới. Bạn được phép hỏi số ô tô màu trong hình chữ nhật (a, b) (c, d), 2 tọa này lần lượt là tọa độ góc trên bên trái và góc dưới bên phải. Số lần hỏi không quá 66. Hãy tìm ra (a, b) (c, d) của hình chữ nhật được tô màu.&lt;/p></description></item></channel></rss>

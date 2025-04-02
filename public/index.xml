@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Aohkgnadnart Blog</title><link>http://localhost:1313/</link><description>Recent content in Introduction on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: Di-visible Confusion</title><link>http://localhost:1313/posts/2021-11-02-Di-visibleConfusion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-02-Di-visibleConfusion/</guid><description>&lt;p>Cho mảng a có n phần tử. Hỏi có thể xóa tất cả các phần tử của mảng hay không? phần tử &lt;code>a[i]&lt;/code> được xóa khi &lt;code>a[i]&lt;/code> không chia hết cho &lt;code>i + 1&lt;/code>, với &lt;code>1 &amp;lt;= i &amp;lt;= |x|&lt;/code>.
+Chỉ số được đánh từ 1, cập nhật lại sau mỗi thao tác xóa.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤10000
+1≤n≤1e5
+1≤ai≤1e9
+It is guaranteed that the sum of n over all test cases doesn&amp;#39;t exceed 3e5.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>5
+3
+1 2 3
+1
+2
+2
+7 7
+10
+384836991 191890310 576823355 782177068 404011431 818008580 954291757 160449218 155374934 840594328
+8
+6 69 696 69696 696969 6969696 69696969 696969696
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>YES
+NO
+YES
+YES
+NO
+&lt;/code>&lt;/pre></description></item><item><title>Problem: AB Balance</title><link>http://localhost:1313/posts/2021-10-30-ABBalance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-30-ABBalance/</guid><description>&lt;p>Cho chuỗi s gồm 2 kí tự &amp;lsquo;a&amp;rsquo; và(hoặc) &amp;lsquo;b&amp;rsquo;. Mỗi thao tác bạn được phép đổi 1 ký tự &amp;lsquo;a&amp;rsquo; thành &amp;lsquo;b&amp;rsquo; và ngược lại.
+Hãy sử dụng số thao tác tối thiểu để làm cho chuỗi s có số substring(ab) bằng số substring (ba).
+Xuất ra chuỗi s sau cùng.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1000
+1≤|s|≤100, consisting only of characters a and/or b
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+b
+aabbbabaa
+abbb
+abbaab
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>b
+aabbbabaa
+bbbb
+abbaaa
+&lt;/code>&lt;/pre></description></item><item><title>Problem: ACM</title><link>http://localhost:1313/posts/2021-10-21-ACM/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-21-ACM/</guid><description>&lt;p>SuperCoders là đội tuyển huyền thoại của trường XYZ đã nhiều lần vô địch cuộc thi lập trình viên vũ trụ ACM Universe Final. Theo thể thức cuộc thi, mỗi đội tham dự chỉ có &lt;strong>đúng&lt;/strong> &lt;code>3&lt;/code> thành viên và được giao duy nhất &lt;code>1&lt;/code> máy tính, chính vì vậy việc điều phối công việc vô cùng quan trọng. Trong đội SuperCoders, PHUONGHD - đội trưởng - là người nắm giữ vai trò đó.&lt;/p>
+&lt;p>Đề thi ACM năm nay gồm có &lt;code>2n&lt;/code> bài đánh số từ &lt;code>1&lt;/code> tới &lt;code>2n&lt;/code>. Bằng kỹ năng thiết kế thuật toán siêu việt, chỉ vài giây sau khi đọc đề, PHUONGHD đã có lời giải cho cả &lt;code>2n&lt;/code> bài. Vấn đề còn lại là phân công hai người còn lại lập trình bởi PHUONGHD không quen với thứ ngôn ngữ lập trình mới được đưa vào sử dụng tại cuộc thi.&lt;/p>
+&lt;p>Do rất hiểu hai lập trình viên Tí và Tèo trong đội, PHUONGHD biết rằng bài thứ &lt;code>i&lt;/code> nếu giao cho Tí làm sẽ mất
+&lt;code>ai&lt;/code> giây, cũng bài đó nếu giao cho Tèo sẽ mất &lt;code>bi&lt;/code> giây để hoàn thành &lt;code>(∀i: 1 ≤ i ≤ 2n)&lt;/code>. Nhiệm vụ của bạn là hãy giúp PHUONGHD phân công cho hai lập trình viên, mỗi người làm &lt;strong>đúng&lt;/strong> &lt;code>n&lt;/code> bài sao cho tổng thời gian lập trình cả &lt;code>2n&lt;/code> bài là &lt;strong>ít nhất&lt;/strong>.&lt;/p></description></item><item><title>Problem: Arena</title><link>http://localhost:1313/posts/2021-10-30-Arena/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-30-Arena/</guid><description>&lt;p>Cho &lt;code>n&lt;/code> &lt;code>(n &amp;lt;= 500)&lt;/code> anh hùng, anh hùng thứ i có &lt;code>a[i]&lt;/code> điểm sức mạnh &lt;code>(1 &amp;lt;= a[i] &amp;lt;= 500)&lt;/code>.
+Mỗi vòng chơi, mỗi anh hùng còn sống sẽ gây 1 sát thương lên các anh hùng còn lại, tức là làm giảm điểm sức mạnh của các anh hùng khác đi 1.
+Sau mỗi vòng, anh hùng có điểm sức mạnh &lt;code>&amp;lt; 1&lt;/code> sẽ chết. Các anh hùng còn sống tiếp tục trò chơi. Người sống sót duy nhất, sau cùng là người chiến thắng.
+Cho &lt;code>n&lt;/code> và &lt;code>x&lt;/code> trong đó &lt;code>n&lt;/code> là số anh hùng và &lt;code>a[i] &amp;lt;= x&lt;/code>. Hãy tìm tất cả các trường mảng &lt;code>a&lt;/code> thỏa mãn, trò chơi không có người chiến thắng sau cùng.
+Hai trường hợp khác nhau khi có ít nhất một anh hùng có điểm sức mạnh khác nhau, ví dụ: &lt;code>[1, 2, 1]&lt;/code> khác &lt;code>[2, 1, 1]&lt;/code>.
+Xuất ra kết quả sau khi lấy phần dư cho &lt;code>998244353&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2≤n≤500
+1≤x≤500
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2 5
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>5
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Atomic Energy</title><link>http://localhost:1313/posts/2021-12-02-atomicenergy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-02-atomicenergy/</guid><description>&lt;p>Cho mảng &lt;code>a&lt;/code> gồm &lt;code>n&lt;/code> số nguyên dương. &lt;code>q&lt;/code> truy vấn, mỗi truy vấn cho một số &lt;code>k&lt;/code>.
+Yêu cầu tính &lt;code>f(k)&lt;/code> biết nếu &lt;code>k &amp;lt;= n&lt;/code> thì &lt;code>f(k) = a[n]&lt;/code>, ngược lại &lt;code>f(k) = min(f(x) + f(k - x))&lt;/code>, &lt;code>x&lt;/code> thuộc &lt;code>[1, k)&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>n &amp;lt;= 100
+1 &amp;lt;= a[i] &amp;lt;= 1e9
+q &amp;lt;= 1e5
+1 &amp;lt;= k &amp;lt;= 1e9
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4 5
+2 3 5 7
+2
+3
+5
+6
+8
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+5
+8
+10
+13
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Best Sum Any Tree Path</title><link>http://localhost:1313/posts/2021-11-02-BestSumAnyTreePath/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-02-BestSumAnyTreePath/</guid><description>&lt;p>Cho cây có n &lt;code>(1 ≤ n ≤ 1e5)&lt;/code> đỉnh đánh số từ 0 tới n - 1, cha của các đỉnh và trọng số của các đỉnh. Tìm được đi có tổng trọng số lớn nhất.
+Biết &lt;code>root = 0&lt;/code>, &lt;code>parent[0] = -1&lt;/code>&lt;/p>
+&lt;p>
+ &lt;img src="https://user-images.githubusercontent.com/83690404/139783508-40aba718-91f5-4761-8946-5f93adada1c7.png" alt="Screenshot 2021-11-02 101706" />&lt;/p></description></item><item><title>Problem: Blue-Red Permutation</title><link>http://localhost:1313/posts/2021-11-03-Blue-Red-Permutation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-03-Blue-Red-Permutation/</guid><description>&lt;p>Cho mảng n phần tử. Nếu phần tử có màu đỏ,được tăng giá trị.
+Nếu phần tử có màu xanh, được giảm giá trị. Hỏi sau cùng có thể thu được, mảng hoán vị của n hay không?&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1e4
+1≤n≤2⋅1e5
+−1e9≤ai≤1e9
+It is guaranteed that the sum of n over all input sets does not exceed 2e5.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>8
+4
+1 2 5 2
+BRBR
+2
+1 1
+BB
+5
+3 1 4 2 5
+RBRRB
+5
+3 1 3 1 3
+RBRRB
+5
+5 1 5 1 5
+RBRRB
+4
+2 2 2 2
+BRBR
+2
+1 -2
+BR
+4
+-2 -1 4 0
+RRRR
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>YES
+NO
+YES
+YES
+NO
+YES
+YES
+YES
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Bubble Strike</title><link>http://localhost:1313/posts/2021-10-16-BubbleStrike/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-16-BubbleStrike/</guid><description>&lt;p>Môt game có &lt;code>2&lt;/code> người chơi (bạn và đối thủ). Có &lt;code>n&lt;/code> bản đồ. Hệ thống chọn ra &lt;code>3&lt;/code> bản đồ từ &lt;code>n&lt;/code> bản đồ. Mỗi người chơi được phép chọn &lt;code>1&lt;/code> bản đồ để loại (&lt;code>2&lt;/code> người chơi chọn độc lập, tức là có thể trùng).
+Sau đó từ các bản đồ không được chọn, hệ thống chọn ra &lt;code>1&lt;/code> bản đồ cho game đó. Bạn chiến thắng game đó khi bạn đã xem bản đồ của game đó.
+Tính số bản đồ bạn cần xem để xác suất chiến thắng trò chơi &lt;code>&amp;gt;= P&lt;/code>. Đối thủ của bạn không biết bạn đã xem bản đồ nào.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3 ≤ N ≤ 1e3
+0 ≤ P ≤ 1
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>7 1.0000
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>6
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Chênh lệch không quá 1</title><link>http://localhost:1313/posts/2021-12-03-digitone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-03-digitone/</guid><description>&lt;p>Một số được gọi là số cân bằng nếu chênh lệch giữa hai chữ số liên tiếp là không quá 1, chẳng hạn như 34322,56654322,45,8,&amp;hellip;. Số có một chữ số cũng được xem là số cân bằng.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>T≤10
+1≤L≤R≤1e100000
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+1 9
+25 47
+14 19
+1 999999999999999999999999999
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>9
+6
+0
+299194653
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Coin Toss</title><link>http://localhost:1313/posts/2021-12-25-CoinToss/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-25-CoinToss/</guid><description>&lt;p>Chuỗi tung đồng xu có thể được mã hóa dưới dạng chuỗi nhị phân, &amp;lsquo;0&amp;rsquo; cho đầu, &amp;lsquo;1&amp;rsquo; cho đuôi.
+Cho một chuỗi được mã hóa S, tung đồng xu cho đến khi S xuất hiện trong chuỗi kết quả thì dừng lại. Gọi T là số lần tung đồng xu để S xuất hiện, tìm giá trị kỳ vọng của T.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 ≤ Q ≤ 1e4
+1 ≤ |S| ≤ 20
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1
+00
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>6
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Complex Market Analysis</title><link>http://localhost:1313/posts/2021-12-03-ComplexMarketAnalysis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-03-ComplexMarketAnalysis/</guid><description>&lt;p>Cho mảng &lt;code>a&lt;/code> gồm &lt;code>n&lt;/code> số tự nhiên và số tự nhiên &lt;code>e&lt;/code>. Tính số cặp &lt;code>(i,k)&lt;/code> thỏa mãn điều các điều kiện: &lt;code>1&amp;lt;=i,k&lt;/code>; &lt;code>i+e*k&amp;lt;=n&lt;/code>; tích &lt;code>a[i]*a[i + e]*a[i + 2e]*...*a[i + ke]&lt;/code> là số nguyên tố.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 &amp;lt;= t &amp;lt;= 1e4
+1 &amp;lt;= e &amp;lt;= n &amp;lt;= 2e5
+1 &amp;lt;= a[i] &amp;lt;= 1e6
+tổng n trong tất cả các test không quá 2e5
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>6
+7 3
+10 2 1 3 1 19 3
+3 2
+1 13 1
+9 3
+2 4 2 1 1 1 1 4 2
+3 1
+1 1 1
+4 1
+1 2 1 1
+2 2
+1 2
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+0
+4
+0
+5
+0
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Crazy Robot</title><link>http://localhost:1313/posts/2021-12-17-CrazyRobot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-17-CrazyRobot/</guid><description>&lt;p>Có một lưới, bao gồm n hàng và m cột. Mỗi ô của lưới là tự do hoặc bị chặn. Một trong những ô trống chứa phòng thí nghiệm. Tất cả các ô bên ngoài đường viền của lưới cũng bị chặn.&lt;/p>
+&lt;p>Một người máy điên rồ đã trốn thoát khỏi phòng thí nghiệm này. Nó hiện đang ở trong một số ô trống của lưới. Bạn có thể gửi một trong các lệnh sau tới rô bốt: &amp;ldquo;di chuyển sang phải&amp;rdquo;, &amp;ldquo;di chuyển xuống&amp;rdquo;, &amp;ldquo;di chuyển sang trái&amp;rdquo; hoặc &amp;ldquo;di chuyển lên trên&amp;rdquo;. Mỗi lệnh có nghĩa là di chuyển đến một ô lân cận theo hướng tương ứng.&lt;/p>
+&lt;p>Tuy nhiên, vì robot điên, nó sẽ làm bất cứ điều gì ngoại trừ việc tuân theo lệnh. Khi nhận được lệnh, nó sẽ chọn một hướng khác với hướng trong lệnh và ô ở hướng đó không bị chặn. Nếu có một hướng như vậy, thì nó sẽ di chuyển đến một ô lân cận theo hướng đó. Nếu không, nó sẽ không làm gì cả.&lt;/p>
+&lt;p>Chúng tôi muốn đưa robot đến phòng thí nghiệm để sửa nó. Đối với mỗi ô trống, hãy xác định xem liệu robot có thể bị buộc đến phòng thí nghiệm bắt đầu từ ô này hay không. Có nghĩa là, sau mỗi bước của rô bốt, một lệnh có thể được gửi đến rô bốt sao cho bất kể rô bốt chọn hướng nào khác nhau, nó sẽ kết thúc trong phòng thí nghiệm.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1000
+1≤n,m≤1e6; n x m≤1e6
+&amp;#39;.&amp;#39; — the cell is free;
+&amp;#39;#&amp;#39; — the cell is blocked;
+&amp;#39;L&amp;#39; — the cell contains a lab.
+The grid contains exactly one lab. The sum of n⋅m over all testcases doesn&amp;#39;t exceed 106.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+3 3
+...
+.L.
+...
+4 5
+#....
+..##L
+...#.
+.....
+1 1
+L
+1 9
+....L..#.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>...
+.L.
+...
+#++++
+..##L
+...#+
+...++
+L
+++++L++#.
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Dãy số</title><link>http://localhost:1313/posts/2021-10-21-Dayso/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-21-Dayso/</guid><description>&lt;p>Cho dãy số gồm &lt;code>N&lt;/code> phần tử.
+Ban đầu, bạn sẽ ở vị trí ô số &lt;code>0&lt;/code> với tổng điểm là &lt;code>0&lt;/code>. Mỗi nước đi, người chơi có thể di chuyển sang phải tối thiểu là &lt;code>1&lt;/code> bước và tối đa là &lt;code>K&lt;/code> bước.
+Khi dừng lại ở ô nào đó thì giá trị của ô đó sẽ được cộng vào tổng điểm. Bạn có thể dừng cuộc chơi bất cứ lúc nào. Hãy tìm cách chơi sao cho tổng điểm nhận được là nhiều nhất.&lt;/p></description></item><item><title>Problem: Divan and bitwise operations</title><link>http://localhost:1313/posts/2021-12-03-Divanandbitwiseoperations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-03-Divanandbitwiseoperations/</guid><description>&lt;p>Cho mảng &lt;code>a&lt;/code> có &lt;code>n&lt;/code> số nguyên không âm, thỏa mãn &lt;code>m&lt;/code> thông tin.
+Mỗi thông tin có dạng: &lt;code>l r x&lt;/code>, cho biết phép OR các phần tử trong đoạn &lt;code>[l,r]&lt;/code> của mảng &lt;code>a&lt;/code> là &lt;code>x&lt;/code>.
+Tính tổng các xor của các subsequence khác rỗng của mảng &lt;code>a&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1e3
+1≤n,m≤2e5
+1≤l≤r≤n
+0≤x≤2^30−1
+tổng n, tổng m trong tất cả các test không vượt quá 2e5
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+2 1
+1 2 2
+3 2
+1 3 5
+2 3 5
+5 4
+1 2 7
+3 3 7
+4 4 0
+4 5 2
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+20
+112
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Dominant Character</title><link>http://localhost:1313/posts/2021-11-13-DominantCharacter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-13-DominantCharacter/</guid><description>&lt;p>Cho chuỗi s có độ dài n được tạo nên từ 3 kí tự &amp;lsquo;a&amp;rsquo;, &amp;lsquo;b&amp;rsquo;, &amp;lsquo;c&amp;rsquo;. Hãy tìm độ dài substring ngắn nhất của s thỏa mãn substring này có:&lt;/p>
+&lt;ul>
+&lt;li>độ dài &amp;gt; 1&lt;/li>
+&lt;li>số kí tự &amp;lsquo;a&amp;rsquo; trong substring lớn hơn số kí tự &amp;lsquo;b&amp;rsquo;&lt;/li>
+&lt;li>số kí tự &amp;lsquo;a&amp;rsquo; trong substring lớn hơn số kí tự &amp;lsquo;c&amp;rsquo;&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤105
+2≤n≤106
+It is guaranteed that the sum of n over all test cases does not exceed 106.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+2
+aa
+5
+cbabb
+8
+cacabccc
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+-1
+3
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Dynamic Diameter</title><link>http://localhost:1313/posts/2021-10-06-DynamicDiameter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-06-DynamicDiameter/</guid><description>&lt;p>Cho cây gồm &lt;code>n&lt;/code> đỉnh. Hỏi nếu nối đỉnh &lt;code>n + 1&lt;/code> vào đỉnh &lt;code>i&lt;/code>, thì đường kính của cây lúc này là bao nhiêu. Xuất ra kết qua cho tất cả &lt;code>i&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤n≤3e5
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+3 2
+2 1
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+2
+3
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Emulation of Numbers</title><link>http://localhost:1313/posts/2021-11-24-Emulation-of-Numbers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-24-Emulation-of-Numbers/</guid><description>&lt;p>Cho số x và mảng n phần tử. Hỏi có bao nhiêu cách tạo nên x từ các phần tử của mảng. Biết mỗi phần tử trong mảng có thể sử dụng nhiều lần.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 ≤ X ≤ 1000000
+2 ≤ N ≤ 9
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>6
+3
+2 7 3
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Finding Borders</title><link>http://localhost:1313/posts/2021-11-03-FindingBorders/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-03-FindingBorders/</guid><description>&lt;p>Cho chuỗi s. Tìm tất cả độ dài của các chuỗi mà nó vừa là tiền tố, vừa là hậu tố của chuỗi s.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤n≤1e6
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>abcababcab
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2 5
+&lt;/code>&lt;/pre></description></item><item><title>Problem: GCD Problem</title><link>http://localhost:1313/posts/2021-12-17-GCDProblem/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-17-GCDProblem/</guid><description>&lt;p>Cho số nguyên dương &lt;code>n&lt;/code>. Tìm &lt;code>3&lt;/code> số nguyên dương phân biệt &lt;code>a&lt;/code>, &lt;code>b&lt;/code>, &lt;code>c&lt;/code> sao cho &lt;code>a + b + c = n&lt;/code> và &lt;code>gcd(a, b) = c&lt;/code>. hoặc cho biết không thể tìm thấy.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤105
+10≤n≤1e9
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>6
+18
+63
+73
+91
+438
+122690412
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>6 9 3
+21 39 3
+29 43 1
+49 35 7
+146 219 73
+28622 122661788 2
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Going Home</title><link>http://localhost:1313/posts/2021-11-27-GoingHome/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-27-GoingHome/</guid><description>&lt;p>Cho mảng &lt;code>a&lt;/code> có &lt;code>n&lt;/code> phần tử. Tìm &lt;code>4&lt;/code> vị trí khác nhau &lt;code>x, y, z, t&lt;/code> sao cho &lt;code>ax + ay = az + at&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4≤n≤200000
+1≤ai≤2.5e6
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>6
+2 1 5 2 7 4
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>YES
+2 3 1 6 
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Gray code</title><link>http://localhost:1313/posts/2021-10-12-Graycode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-12-Graycode/</guid><description>&lt;p>Mã màu xám là danh sách tất cả &lt;code>2^n&lt;/code> chuỗi bit có độ dài &lt;code>n&lt;/code>, trong đó hai chuỗi liên tiếp bất kỳ khác nhau đúng một bit (tức là khoảng cách Hamming của chúng là một).&lt;/p>
+&lt;p>Nhiệm vụ của bạn là tạo mã Xám cho một độ dài nhất định &lt;code>n&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤n≤16
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>00
+01
+11
+10
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Guess the Permutation</title><link>http://localhost:1313/posts/2021-11-15-GuessthePermutation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-15-GuessthePermutation/</guid><description>&lt;p>Cho mảng gồm &lt;code>n&lt;/code> phần tử tăng dần từ &lt;code>1&lt;/code> tới &lt;code>n&lt;/code>. Có các phân đoạn &lt;code>[i, j - 1]&lt;/code> và &lt;code>[j, k]&lt;/code> đã bị đảo ngược lại(&lt;code>i &amp;lt; j &amp;lt; k&lt;/code> và &lt;code>j - i &amp;gt; 1&lt;/code>).
+Bạn được phép hỏi xem đoạn &lt;code>[l, r]&lt;/code> có bao nhiêu cặp nghịch thế. Số lần hỏi nhiều nhất là &lt;code>40&lt;/code>.
+Tìm &lt;code>i, j, k&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4≤n≤1e9
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2 
+5 
+4 
+3 
+3 
+5 
+2 
+2 
+1 
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>? 1 5
+? 2 5
+? 3 5
+! 1 3 5
+? 1 5
+? 2 5
+? 3 5
+! 2 4 5
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Hang động</title><link>http://localhost:1313/posts/2021-10-21-Hangdong/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-21-Hangdong/</guid><description>&lt;p>Một con đom đóm bay vào một cái hang đầy những chướng ngại vật gồm: măng đá (nhô lên từ mặt đất) và nhũ đá (đâm xuống từ trần hang). Hang này dài N đơn vị (N chẵn) và cao H đơn vị. Khi vào hang, vật cản đầu tiên là măng đá, sau đó là nhũ đã, rồi lại đến măng đá, &amp;hellip; cứ thế thay phiên nhau.&lt;/p>
+&lt;p>Con đom đóm này không phải là loài có thể bay quanh các chướng ngại vật. Thay vào đó, nó sẽ chọn một mức chiều cao bắt đầu rồi bay từ đầu đến cuối hang, phá hết tất cả các chướng ngại vật trên đường bay của nó.&lt;/p>
+&lt;p>Theo ví dụ trên, nếu chọn mức 4, con đom đóm sẽ phá tất cả là 8 chướng ngại vật.&lt;/p>
+&lt;p>
+ &lt;img src="https://user-images.githubusercontent.com/83690404/138377328-99ae8263-5889-4613-b556-6e137a1ebb5b.png" alt="image" />&lt;/p>
+&lt;p>Đây không phải là lựa chọn tốt nhất vì con đom đóm sẽ ít mệt hơn nếu chọn mức 1 hoặc mức 5, lúc này nó chỉ cần phá 7 chướng ngại vật.&lt;/p>
+&lt;p>Bạn được cho chiều dài, chiều cao và kích thước của tất cả các chướng ngại vật. Hãy xác định số chướng ngại vật tối thiểu mà con đom đóm cần phá để thoát khỏi hang, và có bao nhiêu cách chọn khác nhau đưa đến kết quả đó.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 &amp;lt;= N &amp;lt;= 2e5
+1 &amp;lt;= H &amp;lt;= 5e5
+h[i] &amp;gt; 0
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>6 7
+1 5 3 3 5 1
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2 3
+&lt;/code>&lt;/pre></description></item><item><title>Problem: HCN</title><link>http://localhost:1313/posts/2021-12-03-HCN/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-03-HCN/</guid><description>&lt;p>Cho 1 mảnh đất hình chữ nhật kích thước nxm được tạo nên từ các ô đất kích thước 1x1. Mỗi ô đất hoặc là đá hoặc là đất.&lt;/p>
+&lt;p>Trên mảnh đất này hãy tìm vùng đất hình chữ nhật có diện tích lớn nhất để xây nhà.
+Biết rằng bạn không thể xây nhà trên đá và ngôi nhà này phải có các cạnh song song với cạnh của mảnh đất đã cho.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>n,m≤1000
+aij = &amp;#39;.&amp;#39; or &amp;#39;*&amp;#39;
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3 4
+..*.
+....
+*..*
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Kingdom of Cats</title><link>http://localhost:1313/posts/2021-12-03-Kingdom-of-Cats/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-03-Kingdom-of-Cats/</guid><description>&lt;p>Choa tọa độ n điểm trong mp Oxy. Tính số tứ giác lồi khác nhau được tạo ra.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤n≤50
+−1e9≤xi,yi≤1e9
+tổng n trong tất cả các test không quá 500
+n = 0 kết thúc chương trình
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>7 
+4 1 
+3 1 
+2 1 
+1 1 
+1 2 
+1 3 
+1 4 
+4 
+0 0 
+0 2 
+2 0 
+2 2 
+0
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>9 
+1
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Korney Korneevich and XOR</title><link>http://localhost:1313/posts/2021-10-28-KorneyKorneevichandXOR/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-28-KorneyKorneevichandXOR/</guid><description>&lt;p>Cho mảng a gồm n &lt;code>(n &amp;lt;= 1e6)&lt;/code> số nguyên &lt;code>(0 &amp;lt;= a[i] &amp;lt;= 5000)&lt;/code>. Xuất ra tất cả giá trị xor của tất cả mảng con(subsequence) tăng dần trong mảng.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤n≤1e6
+0≤ai≤5000
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+4 2 2 4
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+0 2 4 6 
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Lexigraphical Matrix</title><link>http://localhost:1313/posts/2021-12-25-LexigraphicalMatrix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-25-LexigraphicalMatrix/</guid><description>&lt;p>Cho ma trận m x n với mỗi hàng là 1 hoán vị từ 1 tới n.
+Bạn được phép thực hiện thao tác sau với số lần tùy thích để thu được ma trận có thứ tự từ điển lớn nhất: chọn 2 hàng(cột) rồi đổi chỗ chúng.&lt;/p>
+&lt;p>Với q truy vấn, mỗi truy vấn xuất ra phần tử ở vị trí i, j.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 ≤ m, n ≤ 500
+1 ≤ q ≤ 10000
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2 3
+1 2 3
+1 2 3
+2
+1 1
+2 3
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+1
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Longest Y</title><link>http://localhost:1313/posts/2021-12-03-LongestY/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-03-LongestY/</guid><description>&lt;p>Cho một chuỗi &lt;code>S&lt;/code> có gồm kí tự &lt;code>'Y'&lt;/code> và &lt;code>'.'&lt;/code>. Bạn có thể thực hiện thao tác sau với số lần &lt;code>[0:k]&lt;/code>: đổi chỗ &lt;code>2&lt;/code> phần tử liền kề.&lt;/p>
+&lt;p>Số &lt;code>'Y'&lt;/code> liên tiếp lớn nhất có thể là bao nhiêu, sau các hoạt động.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2 &amp;lt;= |s| &amp;lt;= 2e5
+s[i] = &amp;#39;Y&amp;#39; or &amp;#39;.&amp;#39;
+0 &amp;lt;= k &amp;lt;= 1e12
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>YY...Y.Y.Y.
+2
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Make Bipartite</title><link>http://localhost:1313/posts/2021-12-03-MakeBipartite/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-03-MakeBipartite/</guid><description>&lt;p>Cho một đồ thị vô hướng với n+1 các đỉnh đánh số từ [0:n]&lt;/p>
+&lt;p>Với mỗi i=1,2,…,n, đồ thị có một cạnh vô hướng với trọng số là a[i] nối đỉnh i và đỉnh 0.&lt;/p>
+&lt;p>Ngoài ra, đối với mỗi i=1,2,…,n, đồ thị có một cạnh vô hướng với trọng số là b[i] kết nối đỉnh i và đỉnh i + 1(riêng i = n thì kết nối đỉnh n và 1)&lt;/p>
+&lt;p>Biểu đồ không có cạnh nào ngoài các cạnh này N * 2 các cạnh trên.&lt;/p>
+&lt;p>Hãy để chúng tôi xóa một số cạnh khỏi biểu đồ này để biểu đồ sẽ là lưỡng phân.&lt;/p>
+&lt;p>Tổng trọng lượng tối thiểu của các cạnh phải bị xóa là bao nhiêu?&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3 &amp;lt;= n &amp;lt;= 2e5
+1 &amp;lt;= a[i], b[i] &amp;lt;= 1e9
+tất cả giá trị trong input đều nguyên
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>5
+31 4 159 2 65
+5 5 5 5 10
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>16
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Menorah</title><link>http://localhost:1313/posts/2021-12-25-Menorah/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-25-Menorah/</guid><description>&lt;p>Cho n ngọn nến, ngọn nến sáng là 1, ngọn nến tắt là 0. Bạn hay thực hiện thao tác sau với số lần tối thiểu để từ chuỗi a thu được chuỗi b:
+chọn 1 ngọn nến đang sáng, giữ cho nó sáng và đảo ngược trạng thái của các ngọn nến còn lại.
+Xuất ra số lần tối thiểu, hoặc -1 nếu không thể.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1e4
+1≤n≤1e5
+It is guaranteed that the sum of n does not exceed 105.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>5
+5
+11010
+11010
+2
+01
+11
+3
+000
+101
+9
+100010111
+101101100
+9
+001011011
+011010101
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>0
+1
+-1
+3
+4
+&lt;/code>&lt;/pre></description></item><item><title>Problem: MEX and Increments</title><link>http://localhost:1313/posts/2021-12-25-MEXandIncrements/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-25-MEXandIncrements/</guid><description>&lt;p>Cho &lt;code>n&lt;/code> số nguyên không âm. Bạn được phép thực hiện thao tác: chọn &lt;code>1&lt;/code> phần tử và tăng nó thêm &lt;code>1&lt;/code>.&lt;/p>
+&lt;p>Hãy tính số thao tác tối thiểu để tạo &lt;code>Mex(a, i)&lt;/code> vỡi mỗi i thuộc &lt;code>[0, n]&lt;/code> tức là i là số nguyên không âm nhỏ nhất không xuất hiện trong mảng a.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1e4
+1≤n≤2e5
+0≤ai≤n
+It is guaranteed that the sum of the values n over all test cases in the test does not exceed 2e5.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>5
+3
+0 1 3
+7
+0 1 2 3 4 3 2
+4
+3 0 0 0
+7
+4 6 2 3 5 0 5
+5
+4 0 1 0 4
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 1 0 -1 
+1 1 2 2 1 0 2 6 
+3 0 1 4 3 
+1 0 -1 -1 -1 -1 -1 -1 
+2 1 0 2 -1 -1 
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Minimize Distance</title><link>http://localhost:1313/posts/2021-12-17-MinimizeDistance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-17-MinimizeDistance/</guid><description>&lt;p>Tổng cộng &lt;code>n&lt;/code> các kho hàng nằm trên một dãy số. kho chứatôi nằm ở điểm &lt;code>xi&lt;/code> vì &lt;code>1 ≤ i ≤ n&lt;/code>.&lt;/p>
+&lt;p>Bạn là một nhân viên bán hàng với &lt;code>n&lt;/code> các túi hàng hóa, cố gắng phân phối một túi cho mỗi nkho bãi. Bạn vàn túi ban đầu ở nguồn gốc 0. Bạn có thể mang đếnktúi tại một thời điểm. Bạn phải thu thập số lượng hàng hóa cần thiết từ điểm xuất phát, chuyển chúng đến các kho tương ứng, sau đó quay trở lại điểm xuất phát để lấy lô hàng tiếp theo của bạn.&lt;/p>
+&lt;p>Tính toán khoảng cách tối thiểu bạn cần phải trải qua để chuyển tất cả các túi hàng hóa đến kho hàng. Bạn không phải trả lại nguồn gốc sau khi bạn đã giao tất cả các túi.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤10500
+1≤k≤n≤2e5
+−109≤xi≤109
+It is guaranteed that the sum of n over all test cases does not exceed 2e5.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+5 1
+1 2 3 4 5
+9 3
+-5 -10 -15 6 5 8 3 7 4
+5 3
+2 2 3 3 3
+4 2
+1000000000 1000000000 1000000000 1000000000
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>25
+41
+7
+3000000000
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Napoleon Cake</title><link>http://localhost:1313/posts/2021-11-27-NapoleonCake/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-27-NapoleonCake/</guid><description>&lt;p>Cho mảng &lt;code>a&lt;/code> gồm &lt;code>n&lt;/code> phần tử và một mảng &lt;code>b&lt;/code> gồm &lt;code>n&lt;/code> phần tử gồm các phần tử ban đầu đều là &lt;code>0&lt;/code>. Giá trị a[i] cho biết các phần tử từ &lt;code>[a[i] - i + 1, i]&lt;/code> trong mảng &lt;code>b&lt;/code> được thay đổi thành &lt;code>1&lt;/code>.
+Xuất ra mảng &lt;code>b&lt;/code> sau cùng.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤20000
+1≤n≤2e5
+0≤ai≤n
+It is guaranteed that the sum of n over all test cases does not exceed 2e5.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+6
+0 3 0 0 1 3
+10
+0 0 0 1 0 5 0 0 0 2
+3
+0 0 0
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 1 0 1 1 1 
+0 1 1 1 1 1 0 0 1 1 
+0 0 0 
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Nature Reserve</title><link>http://localhost:1313/posts/2021-12-07-NatureReserve/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-07-NatureReserve/</guid><description>&lt;p>Cho tọa độ &lt;code>n&lt;/code> điểm trên mặt phẳng Oxy. Tìm đường tròn có bán kính nhỏ nhất chứa &lt;code>n&lt;/code> điểm này, và đường tròn này có đúng &lt;code>1&lt;/code> giao điểm với đường thẳng &lt;code>y = 0&lt;/code>.&lt;/p>
+&lt;p>Xuất ra bán kính (sai số không quá &lt;code>1e-6&lt;/code>). Nếu không tồn tại đường tròn phù hợp yêu cầu, xuất &lt;code>-1&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 &amp;lt;= n &amp;lt;= 1e5
+-1e7 &amp;lt;= x[i], y[i] &amp;lt;= 1e7
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+0 1
+1 1
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>0.625
+&lt;/code>&lt;/pre></description></item><item><title>Problem: New Scanning Device</title><link>http://localhost:1313/posts/2021-11-24-NewScanningDevice/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-24-NewScanningDevice/</guid><description>&lt;p>Cho lưới 1e9 x 1e9 có các ô đơn vị 1 x 1. Có một hình chữ nhật gồm các ô đơn vị được tô màu. Hình chữ nhật này có các cạnh song song với cạnh của lưới. Bạn được phép hỏi số ô tô màu trong hình chữ nhật (a, b) (c, d), 2 tọa này lần lượt là tọa độ góc trên bên trái và góc dưới bên phải. Số lần hỏi không quá 66. Hãy tìm ra (a, b) (c, d) của hình chữ nhật được tô màu.&lt;/p></description></item><item><title>Problem: New Year's Problem</title><link>http://localhost:1313/posts/2021-12-25-NewYearsProblem/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-25-NewYearsProblem/</guid><description>&lt;p>Bạn được cho ma trận m x n. và bạn được chọn ra n - 1 hàng trong m hàng, sau đó từ n - 1 hàng này, mỗi cột chọn ra 1 phần từ sao cho min của các phần tử được chọn là lớn nhất.&lt;/p>
+&lt;p>Xuất ra giá trị này.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1e4
+2≤n
+2≤n⋅m≤1e5
+It is guaranteed that the sum of the values n⋅m over all test cases in the test does not exceed 1e5.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>5
+
+2 2
+1 2
+3 4
+
+4 3
+1 3 1
+3 1 1
+1 2 2
+1 1 3
+
+2 3
+5 3 4
+2 5 1
+
+4 2
+7 9
+8 1
+9 6
+10 8
+
+2 4
+6 5 2 1
+7 9 7 2
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+2
+4
+8
+2
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Number of Unique Characters</title><link>http://localhost:1313/posts/2021-12-17-NumberofUniqueCharacters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-17-NumberofUniqueCharacters/</guid><description>&lt;p>Định nghĩa &lt;code>𝑓(𝑋)&lt;/code> là số ký tự duy nhất trong chuỗi &lt;code>(𝑋)&lt;/code>. Ví dụ:
+&lt;code>𝑓(𝑎) = 1&lt;/code>, &lt;code>𝑓(𝑎𝑏𝑑𝑒) = 4&lt;/code>, &lt;code>𝑓(𝑎𝑏𝑑𝑒𝑑) = 3&lt;/code>, &lt;code>𝑓(𝑎𝑏𝑏𝑎) = 0&lt;/code>.
+Cho một chuỗi &lt;code>𝑆&lt;/code>. Tính giá trị của biểu thức sau:&lt;/p>
+&lt;p>&lt;code>𝐺(𝑆) = ∑∑𝑓(𝑆 [𝑖. .𝑗])&lt;/code>&lt;/p>
+&lt;p>với &lt;code>𝑆[𝑖. .𝑗]&lt;/code> là chuỗi con liên tiếp từ &lt;code>𝑖&lt;/code> đến &lt;code>𝑗&lt;/code> của &lt;code>𝑆&lt;/code> (lập chỉ mục dựa trên &lt;code>1&lt;/code>).&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>𝟏 ≤ 𝑻 ≤ 𝟏𝟎
+1 ≤ |𝑆| ≤ 1e5
+&amp;#39;a&amp;#39; &amp;lt;= s[i] &amp;lt;= &amp;#39;z&amp;#39;
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+z
+icpccentral
+abcde
+uuuu
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1
+212
+35
+4
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Olympic Sinh Viên 2019 - Không chuyên - Tam giác</title><link>http://localhost:1313/posts/2021-12-17-tamgiac/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-17-tamgiac/</guid><description>&lt;p>Với &lt;code>𝑘&lt;/code> thanh gỗ độ dài &lt;code>𝑙1, 𝑙2, … , 𝑙𝑘&lt;/code> có thể xếp được thành một hình tam giác nếu có cách phân chia &lt;code>𝑘&lt;/code> thanh gỗ thành ba tập khác rỗng,
+sau đó ghép nối các thanh gỗ trong cùng một tập thành một đoạn có độ dài là tổng độ dài các thanh gỗ trong tập,
+khi đó độ dài của ba đoạn đó là độ dài ba cạnh của một tam giác.&lt;/p>
+&lt;p>Hoàng có &lt;code>𝑛&lt;/code> thanh gỗ xếp thành một hàng từ trái sang phải với độ dài tương ứng là &lt;code>𝑑1, 𝑑2, … , 𝑑𝑛&lt;/code>,
+các thanh gỗ có độ dài đôi một khác nhau. Với một số nguyên &lt;code>𝑘&lt;/code> (&lt;code>𝑘 ≥ 3&lt;/code>),
+Hoàng muốn đếm xem có bao nhiêu cách chọn &lt;code>𝑘&lt;/code> thanh gỗ liên tiếp nhau mà &lt;code>𝑘&lt;/code> thanh gỗ này có có thể xếp được thành một hình tam giác&lt;/p>
+&lt;p>Yêu cầu: Cho &lt;code>𝑑1, 𝑑2, … , 𝑑𝑛&lt;/code> và số nguyên &lt;code>𝑘&lt;/code>. Hãy đếm số cách chọn &lt;code>𝑘&lt;/code> thanh gỗ liên tiếp nhau mà &lt;code>𝑘&lt;/code> thanh gỗ này có có thể xếp được thành một hình tam giác.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code> 𝑘 ≤ 𝑛 ≤ 1e5
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>6 3
+1 3 4 2 5 9
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Omkar and Heavenly Tree</title><link>http://localhost:1313/posts/2021-10-19-OmkarandHeavenlyTree/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-19-OmkarandHeavenlyTree/</guid><description>&lt;p>Tìm một cây có n đỉnh, thỏa mãn &lt;code>m&lt;/code> &lt;code>(m &amp;lt; n)&lt;/code> yêu cầu. Mỗi yêu cầu gồm &lt;code>3&lt;/code> cố &lt;code>a, b, c&lt;/code>, hiểu là trên đường đi đơn giản từ đỉnh &lt;code>a&lt;/code> tới đỉnh &lt;code>c&lt;/code> không chứa đỉnh &lt;code>b&lt;/code>.
+Xuất ra &lt;code>n - 1&lt;/code> cạnh của cây. Dễ dàng chứng minh được luôn tồn tại đáp án.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1e4
+3≤n≤105
+1≤m&amp;lt;n
+1≤ai,bi,ci≤n, a, b, c are distinct
+It is guaranteed that the sum of n across all test cases will not exceed 105.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+7 4
+1 2 3
+3 4 5
+5 6 7
+6 5 4
+5 3
+1 2 3
+2 3 4
+3 4 5
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 2
+1 3
+3 5
+3 4
+2 7
+7 6
+5 1
+1 3
+3 2
+2 4
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Palindrome</title><link>http://localhost:1313/posts/2021-12-03-Palindrome/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-03-Palindrome/</guid><description>&lt;p>Một xâu &lt;code>S&lt;/code> chỉ chứa kí tự latin in thường.
+Nếu có thể chặt xâu &lt;code>S&lt;/code> thành &lt;code>3&lt;/code> xâu con không rỗng và cả &lt;code>3&lt;/code> xâu con đều là xâu đối xứng thì xuất &lt;code>YES&lt;/code>, ngược lại xuất &lt;code>NO&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>|s| &amp;lt;= 5000
+&amp;#39;a&amp;#39; &amp;lt;= s[i] &amp;lt;= &amp;#39;z&amp;#39;
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>abadddddz
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>YES
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Paprika and Permutation</title><link>http://localhost:1313/posts/2021-12-17-PaprikaandPermutation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-17-PaprikaandPermutation/</guid><description>&lt;p>Cho mảng &lt;code>a&lt;/code> gồm &lt;code>n&lt;/code> số nguyên dương. Bạn được phép thực hiện thao tác sau với số lần tùy thích: đặt &lt;code>a[i] = a[i] % x&lt;/code>, &lt;code>x&lt;/code> là số nguyên dương mà bạn chọn.
+Hỏi có thể thu được mảng &lt;code>a&lt;/code> gồm &lt;code>n&lt;/code> phần tử là hoán vị từ &lt;code>[1, n]&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1e4
+1≤n≤1e5
+1≤ai≤1e9
+It is guaranteed that the sum of n over all test cases does not exceed 2e5.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+2
+1 7
+3
+1 5 4
+4
+12345678 87654321 20211218 23571113
+9
+1 2 3 4 18 19 5 6 7
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1
+-1
+4
+2
+&lt;/code>&lt;/pre></description></item><item><title>Problem: People are leaving</title><link>http://localhost:1313/posts/2021-10-10-Peopleareleaving/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-10-Peopleareleaving/</guid><description>&lt;p>Cho &lt;code>n&lt;/code> người đang đứng ở vị trí từ &lt;code>1&lt;/code> tới &lt;code>n&lt;/code>. Bạn phải thực hiện các truy vấn thuộc &lt;code>2&lt;/code> loại:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>- x&lt;/code> Người ở vị trí &lt;code>x&lt;/code> rời đi.&lt;/li>
+&lt;li>&lt;code>? x&lt;/code> Người gần nhất bên phải vị trí &lt;code>x&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤n,m≤106
+1≤x≤n
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>5 10
+? 1
+- 3
+? 3
+- 2
+? 1
+? 2
+- 4
+? 3
+- 5
+? 3
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1
+4
+1
+4
+5
+-1
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Quảng cáo</title><link>http://localhost:1313/posts/2021-10-21-quangcao/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-21-quangcao/</guid><description>&lt;p>Nhân dịp Tết sắp đến công ty Jelly-for-Kids quyết định tăng cường việc quảng bá sản phẩm đến người tiêu dùng. Vì thế giám đốc marketing, ông Fruit-Jelly muốn gửi đi số lượng nhân viên tối đa có thể, làm nhiệm vụ tiếp thị tại đại lý trong thành phố&lt;/p>
+&lt;p>Trong thành phố có m con đường, n đại lý bán kẹo (đánh số từ 1 đến n). Mỗi con đường chỉ nối trực tiếp giữa 2 đại lý, và được ký hiệu bằng chỉ số của 2 đại lý mà nó nối. Đồng thời, giữa 2 đại lý bất kỳ có không quá 1 con đường nối chúng&lt;/p>
+&lt;p>Ông Fruit-Jelly nghĩ rằng, ông ta sẽ quản lý nhân viên dễ hơn nếu xếp mỗi người tiếp thị trên những hành trình có tính chất thứ tự. Tức là những đại lý bán kẹo trên hành trình đó thỏa các điều kiện sau&lt;/p>
+&lt;p>Có đường nối trực tiếp giữa 2 đại lý liên tiếp nhau trên hành trình&lt;/p>
+&lt;p>Từ một đại lý bất kỳ trong hành trình có thể đi qua tất cả các đoạn đường trong hành trình đó rồi trở về nơi xuất phát mà không đi qua đoạn đường nào quá một lần&lt;/p>
+&lt;p>Hành trình phân công cho mỗi nhân viên phải có ít nhất một đoạn đường chưa có nhân viên nào khác đi tiếp thị.&lt;/p>
+&lt;p>Mỗi nhân viên chỉ di chuyển trên hành trình mà anh ta được phân công. Hãy tính số lượng nhân viên tối đa mà ông Fruit-Jelly có thể xếp việc, và hành trình cụ thể mà mỗi người được xếp.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>N &amp;lt;= 2000
+M &amp;lt;= 5000
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>5 6
+1 2
+2 4
+4 5
+3 5
+1 3
+2 3
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Remembering Strings</title><link>http://localhost:1313/posts/2021-12-02-RememberingStrings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-02-RememberingStrings/</guid><description>&lt;p>Bạn có nhiều tập hợp &lt;code>n&lt;/code> chuỗi có cùng độ dài, bao gồm các chữ cái tiếng Anh viết thường. Chúng ta sẽ nói rằng những chuỗi đó dễ nhớ nếu đối với mỗi chuỗi có một số vị trí &lt;code>i&lt;/code> và một số chữ cái &lt;code>c&lt;/code> của bảng chữ cái tiếng Anh, sao cho chuỗi này là chuỗi duy nhất trong tập hợp đa có chữ &lt;code>c&lt;/code> ở vị trí &lt;code>i&lt;/code>.&lt;/p>
+&lt;p>Ví dụ: một tập hợp nhiều chuỗi &lt;code>{&amp;quot;abc&amp;quot;, &amp;quot;aba&amp;quot;, &amp;quot;adc&amp;quot;, &amp;quot;ada&amp;quot;}&lt;/code> không dễ nhớ. Và multiset &lt;code>{&amp;quot;abc&amp;quot;, &amp;quot;ada&amp;quot;, &amp;quot;ssa&amp;quot;}&lt;/code> rất dễ nhớ vì:
+chuỗi đầu tiên là chuỗi duy nhất có ký tự &lt;code>c&lt;/code> ở vị trí &lt;code>3&lt;/code> ;
+chuỗi thứ hai là chuỗi duy nhất có ký tự &lt;code>d&lt;/code> ở vị trí &lt;code>2&lt;/code> ;
+chuỗi thứ ba là chuỗi duy nhất có ký tự &lt;code>s&lt;/code> ở vị trí &lt;code>2&lt;/code> .&lt;/p>
+&lt;p>Bạn muốn thay đổi một chút bộ đa năng của mình để dễ nhớ. Đối với &lt;code>aij&lt;/code> tiền xu, bạn có thể thay đổi nhân vật trong &lt;code>j&lt;/code> vị trí -thứ &lt;code>i&lt;/code> của chuỗi -thứ vào bất kỳ chữ cái thường khác của bảng chữ cái tiếng Anh. Tìm số tiền tối thiểu bạn phải trả là bao nhiêu để làm cho tập hợp nhiều chuỗi dễ nhớ.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 &amp;lt;= n, m &amp;lt;= 20
+0 &amp;lt;= aij &amp;lt;= 1e6
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4 5
+abcde
+abcde
+abcde
+abcde
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Reverse</title><link>http://localhost:1313/posts/2021-12-25-Reverse/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-25-Reverse/</guid><description>&lt;p>Bạn được cung cấp hai số nguyên dương x và y.
+Bạn có thể thực hiện thao tác sau với x: viết nó ở dạng nhị phân không có số 0 ở đầu, thêm 0 hoặc là 1 ở bên phải của nó, đảo ngược dạng nhị phân và biến nó thành một số thập phân được gán làm giá trị mới của x.&lt;/p>
+&lt;p>Ví dụ:&lt;/p>
+&lt;p>34 có thể được biến thành 81 thông qua một hoạt động: dạng nhị phân của 34 Là 100010, Nếu bạn thêm 1, đảo ngược nó và loại bỏ các số không ở đầu, bạn sẽ nhận được 1010001, là dạng nhị phân của 81.
+34 có thể được biến thành 17 thông qua một hoạt động: dạng nhị phân của 34 Là 100010, Nếu bạn thêm 0, đảo ngược nó và loại bỏ các số không ở đầu, bạn sẽ nhận được 10001, là dạng nhị phân của 17.
+81 có thể được biến thành 69 thông qua một hoạt động: dạng nhị phân của 81 Là 1010001, Nếu bạn thêm 0, đảo ngược nó và loại bỏ các số không ở đầu, bạn sẽ nhận được 1000101, là dạng nhị phân của 69.
+34 có thể được biến thành 69 qua hai thao tác: đầu tiên bạn lần lượt 34 vào trong 81 và sau đó 81 vào trong 69.&lt;/p>
+&lt;p>Nhiệm vụ của bạn là tìm hiểu xem liệu x có thể được biến thành y sau một số hoạt động nhất định (có thể bằng không).&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code> 1≤x,y≤1e18
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3 3
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>yes
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Road Improvement</title><link>http://localhost:1313/posts/2021-12-02-RoadImprovement/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-02-RoadImprovement/</guid><description>&lt;p>Đất nước có &lt;code>n&lt;/code> thành phố và &lt;code>n - 1&lt;/code> con đường hai chiều, bạn có thể đi từ mọi thành phố này đến bất kỳ thành phố nào khác nếu bạn chỉ di chuyển dọc theo các con đường. Các thành phố được đánh số bằng các số nguyên từ &lt;code>1&lt;/code> đến &lt;code>n&lt;/code>.&lt;/p>
+&lt;p>Tất cả các con đường ban đầu đều xấu, nhưng chính phủ muốn cải thiện tình trạng của một số con đường. Chúng tôi sẽ cho rằng người dân hài lòng về việc cải tạo đường nếu con đường từ thủ đô nằm ở thành phố &lt;code>x&lt;/code> đến bất kỳ thành phố nào khác có nhiều nhất một con đường xấu.&lt;/p>
+&lt;p>Nhiệm vụ của bạn là với mọi &lt;code>x&lt;/code> có thể xác định số cách cải thiện chất lượng của một số con đường để đáp ứng điều kiện của người dân. Vì những giá trị đó có thể khá lớn, bạn cần in từng mô-đun giá trị &lt;code>1000000007&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>n &amp;lt;= 2e5
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+1 1
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4 3 3
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Robin</title><link>http://localhost:1313/posts/2021-10-21-Robin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-21-Robin/</guid><description>&lt;p>Một ngày đẹp trời nọ, trên vương quốc của các Coders 2011, bỗng xuất hiện 1 lão phù thủy độc ác, lão phù thủy sirDat_LS đã có âm mưu thôn tính đất nước của đức vua vodanh9x. Lão phù thủy này rất yêu con gái của đức vua là Rose và đã bắt Rose về nơi ở của lão ta.&lt;/p>
+&lt;p>Đức vua vodanh9x liền tìm hiệp sĩ Robin và sẽ hứa gả con gái cho Robin nếu chàng cứu được công chúa Rose trở về. Lão phù thủy sirDat_LS độc ác với khuôn mặt rất ghê tởm khiến công chúa mỗi khi nhìn thấy hắn thì công chúa lại ngất đi.&lt;/p>
+&lt;p>Và rồi, chàng Robin của chúng ta đã tìm được đến nơi ở của lão phù thủy. Nơi ở của lão là 1 mê cung có N phòng, và N phòng này liên thông với nhau và có đúng N-1 đường đi (coi mỗi đường đi là 1 cạnh).&lt;/p>
+&lt;p>Nhưng khó khăn thay, lão phù thủy đã đánh số mỗi đường đi là 1 hoặc 2. Nếu chàng Robin muốn đến cứu công chúa, thì từ nơi xuất phát đến nơi có công chúa phải có ít nhất một đường đi được đánh số 2, nếu không chàng Robin sẽ chết.&lt;/p>
+&lt;p>Yêu cầu: Cho m truy vấn (m &amp;lt;= 10^5) mỗi truy vấn có dạng (x,y), trong đó x là nơi xuất phát của Robin và y là nơi nhốt công chúa. Xác định đường đi ngắn nhất từ x đến y có cạnh co trọng số 2 hay không.&lt;/p></description></item><item><title>Problem: Search Engine</title><link>http://localhost:1313/posts/2021-11-03-SearchEngine/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-03-SearchEngine/</guid><description>&lt;p>Cho mảng n phần tử, mỗi phần tử gồm 1 chuỗi và 1 trọng số. Cho q truy vấn, mỗi truy vấn là một chuỗi x.
+Tìm chuỗi y trong mảng a sao cho x là tiền tố của y và trọng số của y là lớn nhất có thể.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 ≤ n, weight, len(s), len(t) ≤ 1e6
+1 ≤ q ≤ 1e5
+total length of all strings in database entries ≤ 1e6
+total length of all query strings ≤ 1e6
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Shifting Sort</title><link>http://localhost:1313/posts/2021-09-20-ShiftingSort/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-09-20-ShiftingSort/</guid><description>&lt;p>Cho một mảng số nguyên. Hãy sắp xếp lại mảng. Được sử dụng thao tác sau không quá &lt;code>n&lt;/code> lần: chọn &lt;code>1&lt;/code> đoạn &lt;code>[l,r]&lt;/code> của mảng, dịch sang trái &lt;code>k&lt;/code> vị trí. Ví dụ &lt;code>2, 5, 3&lt;/code> dịch sang trái &lt;code>1&lt;/code> đơn vị sẽ là &lt;code>5, 3, 2&lt;/code>. Xuất ra các thao tác đã thực hiện để thu được mảng không giảm.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1000
+2≤n≤50
+−1e9≤ai≤1e9
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+2
+2 1
+3
+1 2 1
+4
+2 4 1 3
+5
+2 5 1 4 3
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1
+1 2 1
+1
+1 3 2
+3
+2 4 1
+2 3 1
+1 3 2
+4
+2 4 2
+1 5 3
+1 2 1
+1 3 1
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Singers' Tour</title><link>http://localhost:1313/posts/2021-12-25-SingersTour/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-25-SingersTour/</guid><description>&lt;p>Mảng a gồm n phần tử, mảng b được tạo nên từ mảng a như sau: ví dụ&lt;/p>
+&lt;p>&lt;code>a = {2, 5, 3}&lt;/code>&lt;/p>
+&lt;p>&lt;code>2 4 6&lt;/code>&lt;/p>
+&lt;p>&lt;code>15 5 10&lt;/code>&lt;/p>
+&lt;p>&lt;code>6 9 3&lt;/code>&lt;/p>
+&lt;p>&lt;code>23 18 19&lt;/code>&lt;/p>
+&lt;p>vậy mảng &lt;code>b = {23, 18, 19}&lt;/code>
+Tức là trong ma trận n x n thì các phần tử của mảng a chính là các phần tử trân đường chéo chính của ma trận.
+Các phần tử tiếp bên phải được tạo nên bằng cách gấp đôi phần tử trước.&lt;/p>
+&lt;p>Cho mảng b, tìm mảng a. hoặc cho biết không thể.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1e3
+1≤n≤4e4 
+1≤bi≤1e9
+The sum of n over all test cases does not exceed 2e5.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+3
+12 16 14
+1
+1
+3
+1 2 3
+6
+81 75 75 93 93 87
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>YES
+3 1 3 
+YES
+1 
+NO
+YES
+5 5 4 1 4 5 
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Special Number</title><link>http://localhost:1313/posts/2021-12-25-SpecialNumber/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-25-SpecialNumber/</guid><description>&lt;p>Đếm số cặp số nguyên dương &lt;code>(x, y)&lt;/code> sao cho &lt;code>x + 2y = N&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 &amp;lt;= N &amp;lt;= 1e15
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>100
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>7
+&lt;/code>&lt;/pre></description></item><item><title>Problem: String Matching</title><link>http://localhost:1313/posts/2021-11-03-StringMatching/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-03-StringMatching/</guid><description>&lt;p>Cho một chuỗi và mẫu. Đếm số vị trí mẫu xuất hiện trong chuỗi.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤n,m≤1e6
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>saippuakauppias
+pp
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+&lt;/code>&lt;/pre></description></item><item><title>Problem: String Subsequences</title><link>http://localhost:1313/posts/2021-11-02-StringSubsequences/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-02-StringSubsequences/</guid><description>&lt;p>Cho chuỗi &lt;code>s1&lt;/code> có độ dài &lt;code>3&lt;/code>, &lt;code>s2&lt;/code> có độ dài &lt;code>&amp;lt;=1e5&lt;/code>. Tìm số &lt;code>s2.subsequence(s1)&lt;/code>.&lt;/p></description></item><item><title>Problem: The least round way</title><link>http://localhost:1313/posts/2021-12-02-Theleastroundway/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-02-Theleastroundway/</guid><description>&lt;p>Có một ma trận vuông &lt;code>n × n&lt;/code> , bao gồm các số nguyên không âm.
+Bạn nên tìm một cách như vậy trên đó bắt đầu ở ô phía trên bên trái của ma trận;
+mỗi ô sau nằm ở bên phải hoặc đi xuống so với ô hiện tại;
+đường kết thúc ở ô dưới cùng bên phải.&lt;/p>
+&lt;p>Hơn nữa, nếu chúng ta nhân với nhau tất cả các số trên đường đi, kết quả sẽ là &amp;ldquo;vòng&amp;rdquo; nhỏ nhất. Nói cách khác, nó phải kết thúc bằng số lượng số &lt;code>0&lt;/code> ít nhất có thể.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2 &amp;lt;= n &amp;lt;= 1000
+0 &amp;lt;= aij &amp;lt;= 1e9
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3 
+1 2 3 
+4 5 6 
+7 8 9
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>0 
+DDRR
+&lt;/code>&lt;/pre></description></item><item><title>Problem: The Number of Imposters</title><link>http://localhost:1313/posts/2021-10-12-TheNumberofImposters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-12-TheNumberofImposters/</guid><description>&lt;p>Cho &lt;code>n&lt;/code> người chơi cùng chơi game. mỗi người sẽ là &lt;code>imposter&lt;/code> hoặc &lt;code>crewmate&lt;/code>. &lt;code>imposter&lt;/code> là người luôn nói dối, cewmate là người luôn nói thật. cho &lt;code>m&lt;/code> nhận xét có dạng &lt;code>(i, j, c)&lt;/code> ví dụ: &lt;code>1 2 imposter&lt;/code>, tức là người chơi &lt;code>1&lt;/code> nói người chơi &lt;code>2&lt;/code> là &lt;code>imposter&lt;/code>, như vậy nếu người chơi &lt;code>2&lt;/code> đúng là &lt;code>imposter&lt;/code> thì người chơi &lt;code>1&lt;/code> là &lt;code>crewmate&lt;/code>, và ngược lại.
+Tính số lượng &lt;strong>tối đa&lt;/strong> imposter trong game.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1e4
+1≤n≤2e5
+0≤m≤5e5
+the structure &amp;#34;i j c&amp;#34; where i and j are two distinct integers and c is a string (1≤i,j≤n; i≠j; c is either imposter or crewmate
+There can be multiple comments for the same pair of (i,j).
+It is guaranteed that the sum of all n does not exceed 2e5 and the sum of all m does not exceed 5e5.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>5
+3 2
+1 2 imposter
+2 3 crewmate
+5 4
+1 3 crewmate
+2 5 crewmate
+2 4 imposter
+3 4 imposter
+2 2
+1 2 imposter
+2 1 crewmate
+3 5
+1 2 imposter
+1 2 imposter
+3 2 crewmate
+3 2 crewmate
+1 3 imposter
+5 0
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+4
+-1
+2
+5
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Tom and Jery</title><link>http://localhost:1313/posts/2021-12-17-TomandJery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-17-TomandJery/</guid><description>&lt;p>Tom và Jerry đang đuổi theo nhau trong một mê cung được hình thành như một cái cây.
+Cây này có &lt;code>𝑛&lt;/code> nút. Jerry hiện đang ở nút &lt;code>𝑥&lt;/code> và có một quả bom do Tom đặt ở đây.
+Bom có tầm bắn &lt;code>𝑡&lt;/code> nên khi phát nổ, tất cả các nút có khoảng cách đến nút 𝑥 nhỏ hơn hoặc bằng &lt;code>𝑡&lt;/code> sẽ bị cháy.
+Nếu Jerry bị cháy, anh ta sẽ bị ngất và bị Tom bắt. Tất nhiên, Jerry muốn thoát khỏi khu vực phát nổ bằng cách chạy qua các cạnh trong mê cung.
+Mặt khác, Tom muốn bắt Jerry nên định chặn một vài cạnh trên mê cung để Jerry không thể di chuyển qua các cạnh này.
+Nhiệm vụ: Đưa ra một tập hợp &lt;code>𝑚&lt;/code> truy vấn, mỗi truy vấn có hai số &lt;code>𝑥&lt;/code> và &lt;code>𝑡&lt;/code>, cho biết nút ban đầu mà Jerry và quả bom hiện đang ở, và phạm vi của quả bom.
+Hãy giúp Tom tìm số cạnh tối thiểu phải chặn để bắt được Jerry&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 ≤ 𝑛, 𝑚 ≤ 1e5
+1 ≤ 𝑢, 𝑣 ≤ 𝑛; 𝑢 ≠ 𝑣
+1 ≤ 𝑥 ≤ 𝑛; 0 ≤ 𝑡 ≤ 𝑛
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>7 3
+1 2
+2 3
+2 4
+3 5
+3 6
+4 7
+4 1
+2 2
+2 1
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1
+0
+2
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Training Session</title><link>http://localhost:1313/posts/2021-10-13-TrainingSession/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-13-TrainingSession/</guid><description>&lt;p>Cho &lt;code>n&lt;/code> cặp số &lt;code>(x, y)&lt;/code>. Tính số cách chọn ra &lt;code>3&lt;/code> cặp số &lt;code>(x, y)&lt;/code> trong &lt;code>n&lt;/code> cặp số, sao cho giá trị &lt;code>x&lt;/code> của chúng khác nhau từng đôi &lt;strong>hoặc&lt;/strong> giá trị &lt;code>y&lt;/code> của chúng khác nhau từng đôi.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤50000
+3≤n≤2e5
+1≤ai,bi≤n
+It is guaranteed that there are no two problems that have the same topic and difficulty at the same time.
+The sum of n over all testcases doesn&amp;#39;t exceed 2⋅105.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+4
+2 4
+3 4
+2 1
+1 3
+5
+1 5
+2 4
+3 3
+4 2
+5 1
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+10
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Vupsen, Pupsen and 0</title><link>http://localhost:1313/posts/2021-10-28-VupsenPupsenand0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-28-VupsenPupsenand0/</guid><description>&lt;p>Cho mảng a gồm n số nguyên. Tìm mảng b có n phần tử &lt;code>(0 &amp;lt; |b[i]| &amp;lt;= 1e9)&lt;/code> sao cho &lt;code>tổng của tất cả |b[i]| &amp;lt;= 1e9&lt;/code> và &lt;code>tổng của tất cả a[i] * b[i]&lt;/code> bằng &lt;code>0&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2 &amp;lt;= n &amp;lt;= 1e5
+0 &amp;lt; |a[i]| &amp;lt;= 1e4
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+2
+5 5
+5
+5 -2 10 -9 4
+7
+1 2 3 4 5 6 7
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 -1
+-1 5 1 -1 -1
+-10 2 2 -3 5 -1 -1
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Word Combinations</title><link>http://localhost:1313/posts/2021-11-03-WordCombinations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-03-WordCombinations/</guid><description>&lt;p>Cho 1 chuỗi s và n chuỗi. Hỏi có bao nhiêu cách tạo nên chuỗi s từ các chuỗi trong n chuỗi. Kết quả được lấy dư cho &lt;code>1e9 + 7&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤n≤5000 
+1≤k≤1e5
+the total length of the words is at most 1e6
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+ab
+abab
+c
+cb
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+&lt;/code>&lt;/pre></description></item><item><title>Problem: X-Magic Pair</title><link>http://localhost:1313/posts/2021-12-03-X-Magic-Pair/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-03-X-Magic-Pair/</guid><description>&lt;p>Bạn được cung cấp một cặp số nguyên &lt;code>(a,b)&lt;/code> và một số nguyên &lt;code>x&lt;/code>.&lt;/p>
+&lt;p>Bạn có thể thay đổi cặp theo hai cách khác nhau: set (gán) &lt;code>a=|a−b|&lt;/code>;set (gán) &lt;code>b=|a−b|&lt;/code>,&lt;/p>
+&lt;p>Cặp &lt;code>(a,b)&lt;/code> được gọi là x-magic nếu &lt;code>x&lt;/code> có thể đạt được như &lt;code>a&lt;/code> hoặc như &lt;code>b&lt;/code> chỉ sử dụng các phép toán đã cho (tức là cặp &lt;code>(a,b)&lt;/code> có &lt;code>a = x&lt;/code> hoặc &lt;code>b = x&lt;/code>).&lt;/p>
+&lt;p>Nhiệm vụ của bạn là tìm xem cặp &lt;code>(a,b)&lt;/code> là x-magic hay không.&lt;/p>
+&lt;p>Bạn phải trả lời t trường hợp thử nghiệm độc lập.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 &amp;lt;= t &amp;lt;= 1e4
+1 &amp;lt;= a, b, x &amp;lt;= 1e18
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>8
+6 9 3
+15 38 7
+18 8 8
+30 30 30
+40 50 90
+24 28 20
+365 216 52
+537037812705867558 338887693834423551 3199921013340
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>YES
+YES
+YES
+YES
+NO
+YES
+YES
+YES
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Xâu con chung dài nhất</title><link>http://localhost:1313/posts/2021-10-21-lcs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-21-lcs/</guid><description>&lt;p>Xâu ký tự &lt;code>X&lt;/code> được gọi là xâu con của xâu ký tự &lt;code>Y&lt;/code> nếu ta có thể xoá đi một số ký tự trong xâu &lt;code>Y&lt;/code> để được xâu &lt;code>X&lt;/code>.&lt;/p>
+&lt;p>Cho biết hai xâu ký tự &lt;code>A&lt;/code> và &lt;code>B&lt;/code>, hãy tìm xâu ký tự &lt;code>C&lt;/code> có độ dài lớn nhất và là con của cả &lt;code>A&lt;/code> và &lt;code>B&lt;/code>.&lt;/p></description></item><item><title>Problem: XOR Specia-LIS-t</title><link>http://localhost:1313/posts/2021-11-02-XORSpecia-LIS-t/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-02-XORSpecia-LIS-t/</guid><description>&lt;p>Cho mảng a gồm n phần từ. chia mảng a thành k subarrays sao cho mỗi phần tử trong a thuộc về 1 subarrays.
+Mỗi subarray có 1 giá trị x, chính là độ dài chuỗi con tăng dài nhất trong subarray (LIS). Sau đó xor tất cả các giá trị x lại được giá trị 0.
+Hỏi có tồn tại cách chia k subarrays theo yêu cầu của bài không?&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤10000
+2≤n≤1e5
+1≤ai≤1e9
+It is guaranteed that the sum of n over all test cases doesn&amp;#39;t exceed 3e5.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+7
+1 3 4 2 2 1 5
+3
+1 3 4
+5
+1 3 2 4 2
+4
+4 3 2 1
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>YES
+NO
+YES
+YES
+&lt;/code>&lt;/pre></description></item><item><title>Problem:...</title><link>http://localhost:1313/posts/sample/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/sample/</guid><description>&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>&lt;/code>&lt;/pre></description></item></channel></rss>

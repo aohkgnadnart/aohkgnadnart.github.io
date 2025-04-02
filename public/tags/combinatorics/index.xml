@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Combinatorics on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/combinatorics/</link><description>Recent content in Combinatorics on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/combinatorics/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: Arena</title><link>http://localhost:1313/posts/2021-10-30-Arena/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-30-Arena/</guid><description>&lt;p>Cho &lt;code>n&lt;/code> &lt;code>(n &amp;lt;= 500)&lt;/code> anh hùng, anh hùng thứ i có &lt;code>a[i]&lt;/code> điểm sức mạnh &lt;code>(1 &amp;lt;= a[i] &amp;lt;= 500)&lt;/code>.
+Mỗi vòng chơi, mỗi anh hùng còn sống sẽ gây 1 sát thương lên các anh hùng còn lại, tức là làm giảm điểm sức mạnh của các anh hùng khác đi 1.
+Sau mỗi vòng, anh hùng có điểm sức mạnh &lt;code>&amp;lt; 1&lt;/code> sẽ chết. Các anh hùng còn sống tiếp tục trò chơi. Người sống sót duy nhất, sau cùng là người chiến thắng.
+Cho &lt;code>n&lt;/code> và &lt;code>x&lt;/code> trong đó &lt;code>n&lt;/code> là số anh hùng và &lt;code>a[i] &amp;lt;= x&lt;/code>. Hãy tìm tất cả các trường mảng &lt;code>a&lt;/code> thỏa mãn, trò chơi không có người chiến thắng sau cùng.
+Hai trường hợp khác nhau khi có ít nhất một anh hùng có điểm sức mạnh khác nhau, ví dụ: &lt;code>[1, 2, 1]&lt;/code> khác &lt;code>[2, 1, 1]&lt;/code>.
+Xuất ra kết quả sau khi lấy phần dư cho &lt;code>998244353&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2≤n≤500
+1≤x≤500
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2 5
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>5
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Bubble Strike</title><link>http://localhost:1313/posts/2021-10-16-BubbleStrike/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-16-BubbleStrike/</guid><description>&lt;p>Môt game có &lt;code>2&lt;/code> người chơi (bạn và đối thủ). Có &lt;code>n&lt;/code> bản đồ. Hệ thống chọn ra &lt;code>3&lt;/code> bản đồ từ &lt;code>n&lt;/code> bản đồ. Mỗi người chơi được phép chọn &lt;code>1&lt;/code> bản đồ để loại (&lt;code>2&lt;/code> người chơi chọn độc lập, tức là có thể trùng).
+Sau đó từ các bản đồ không được chọn, hệ thống chọn ra &lt;code>1&lt;/code> bản đồ cho game đó. Bạn chiến thắng game đó khi bạn đã xem bản đồ của game đó.
+Tính số bản đồ bạn cần xem để xác suất chiến thắng trò chơi &lt;code>&amp;gt;= P&lt;/code>. Đối thủ của bạn không biết bạn đã xem bản đồ nào.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3 ≤ N ≤ 1e3
+0 ≤ P ≤ 1
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>7 1.0000
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>6
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Coin Toss</title><link>http://localhost:1313/posts/2021-12-25-CoinToss/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-25-CoinToss/</guid><description>&lt;p>Chuỗi tung đồng xu có thể được mã hóa dưới dạng chuỗi nhị phân, &amp;lsquo;0&amp;rsquo; cho đầu, &amp;lsquo;1&amp;rsquo; cho đuôi.
+Cho một chuỗi được mã hóa S, tung đồng xu cho đến khi S xuất hiện trong chuỗi kết quả thì dừng lại. Gọi T là số lần tung đồng xu để S xuất hiện, tìm giá trị kỳ vọng của T.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 ≤ Q ≤ 1e4
+1 ≤ |S| ≤ 20
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1
+00
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>6
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Guess the Permutation</title><link>http://localhost:1313/posts/2021-11-15-GuessthePermutation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-15-GuessthePermutation/</guid><description>&lt;p>Cho mảng gồm &lt;code>n&lt;/code> phần tử tăng dần từ &lt;code>1&lt;/code> tới &lt;code>n&lt;/code>. Có các phân đoạn &lt;code>[i, j - 1]&lt;/code> và &lt;code>[j, k]&lt;/code> đã bị đảo ngược lại(&lt;code>i &amp;lt; j &amp;lt; k&lt;/code> và &lt;code>j - i &amp;gt; 1&lt;/code>).
+Bạn được phép hỏi xem đoạn &lt;code>[l, r]&lt;/code> có bao nhiêu cặp nghịch thế. Số lần hỏi nhiều nhất là &lt;code>40&lt;/code>.
+Tìm &lt;code>i, j, k&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4≤n≤1e9
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2 
+5 
+4 
+3 
+3 
+5 
+2 
+2 
+1 
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>? 1 5
+? 2 5
+? 3 5
+! 1 3 5
+? 1 5
+? 2 5
+? 3 5
+! 2 4 5
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Training Session</title><link>http://localhost:1313/posts/2021-10-13-TrainingSession/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-13-TrainingSession/</guid><description>&lt;p>Cho &lt;code>n&lt;/code> cặp số &lt;code>(x, y)&lt;/code>. Tính số cách chọn ra &lt;code>3&lt;/code> cặp số &lt;code>(x, y)&lt;/code> trong &lt;code>n&lt;/code> cặp số, sao cho giá trị &lt;code>x&lt;/code> của chúng khác nhau từng đôi &lt;strong>hoặc&lt;/strong> giá trị &lt;code>y&lt;/code> của chúng khác nhau từng đôi.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤50000
+3≤n≤2e5
+1≤ai,bi≤n
+It is guaranteed that there are no two problems that have the same topic and difficulty at the same time.
+The sum of n over all testcases doesn&amp;#39;t exceed 2⋅105.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+4
+2 4
+3 4
+2 1
+1 3
+5
+1 5
+2 4
+3 3
+4 2
+5 1
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+10
+&lt;/code>&lt;/pre></description></item></channel></rss>

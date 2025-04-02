@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Math on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/math/</link><description>Recent content in Math on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/math/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: Atomic Energy</title><link>http://localhost:1313/posts/2021-12-02-atomicenergy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-02-atomicenergy/</guid><description>&lt;p>Cho mảng &lt;code>a&lt;/code> gồm &lt;code>n&lt;/code> số nguyên dương. &lt;code>q&lt;/code> truy vấn, mỗi truy vấn cho một số &lt;code>k&lt;/code>.
+Yêu cầu tính &lt;code>f(k)&lt;/code> biết nếu &lt;code>k &amp;lt;= n&lt;/code> thì &lt;code>f(k) = a[n]&lt;/code>, ngược lại &lt;code>f(k) = min(f(x) + f(k - x))&lt;/code>, &lt;code>x&lt;/code> thuộc &lt;code>[1, k)&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>n &amp;lt;= 100
+1 &amp;lt;= a[i] &amp;lt;= 1e9
+q &amp;lt;= 1e5
+1 &amp;lt;= k &amp;lt;= 1e9
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4 5
+2 3 5 7
+2
+3
+5
+6
+8
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+5
+8
+10
+13
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Going Home</title><link>http://localhost:1313/posts/2021-11-27-GoingHome/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-27-GoingHome/</guid><description>&lt;p>Cho mảng &lt;code>a&lt;/code> có &lt;code>n&lt;/code> phần tử. Tìm &lt;code>4&lt;/code> vị trí khác nhau &lt;code>x, y, z, t&lt;/code> sao cho &lt;code>ax + ay = az + at&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4≤n≤200000
+1≤ai≤2.5e6
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>6
+2 1 5 2 7 4
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>YES
+2 3 1 6 
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Number of Unique Characters</title><link>http://localhost:1313/posts/2021-12-17-NumberofUniqueCharacters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-17-NumberofUniqueCharacters/</guid><description>&lt;p>Định nghĩa &lt;code>𝑓(𝑋)&lt;/code> là số ký tự duy nhất trong chuỗi &lt;code>(𝑋)&lt;/code>. Ví dụ:
+&lt;code>𝑓(𝑎) = 1&lt;/code>, &lt;code>𝑓(𝑎𝑏𝑑𝑒) = 4&lt;/code>, &lt;code>𝑓(𝑎𝑏𝑑𝑒𝑑) = 3&lt;/code>, &lt;code>𝑓(𝑎𝑏𝑏𝑎) = 0&lt;/code>.
+Cho một chuỗi &lt;code>𝑆&lt;/code>. Tính giá trị của biểu thức sau:&lt;/p>
+&lt;p>&lt;code>𝐺(𝑆) = ∑∑𝑓(𝑆 [𝑖. .𝑗])&lt;/code>&lt;/p>
+&lt;p>với &lt;code>𝑆[𝑖. .𝑗]&lt;/code> là chuỗi con liên tiếp từ &lt;code>𝑖&lt;/code> đến &lt;code>𝑗&lt;/code> của &lt;code>𝑆&lt;/code> (lập chỉ mục dựa trên &lt;code>1&lt;/code>).&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>𝟏 ≤ 𝑻 ≤ 𝟏𝟎
+1 ≤ |𝑆| ≤ 1e5
+&amp;#39;a&amp;#39; &amp;lt;= s[i] &amp;lt;= &amp;#39;z&amp;#39;
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+z
+icpccentral
+abcde
+uuuu
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1
+212
+35
+4
+&lt;/code>&lt;/pre></description></item></channel></rss>

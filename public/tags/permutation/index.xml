@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Permutation on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/permutation/</link><description>Recent content in Permutation on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/permutation/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: Lexigraphical Matrix</title><link>http://localhost:1313/posts/2021-12-25-LexigraphicalMatrix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-25-LexigraphicalMatrix/</guid><description>&lt;p>Cho ma trận m x n với mỗi hàng là 1 hoán vị từ 1 tới n.
+Bạn được phép thực hiện thao tác sau với số lần tùy thích để thu được ma trận có thứ tự từ điển lớn nhất: chọn 2 hàng(cột) rồi đổi chỗ chúng.&lt;/p>
+&lt;p>Với q truy vấn, mỗi truy vấn xuất ra phần tử ở vị trí i, j.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 ≤ m, n ≤ 500
+1 ≤ q ≤ 10000
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2 3
+1 2 3
+1 2 3
+2
+1 1
+2 3
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+1
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Paprika and Permutation</title><link>http://localhost:1313/posts/2021-12-17-PaprikaandPermutation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-17-PaprikaandPermutation/</guid><description>&lt;p>Cho mảng &lt;code>a&lt;/code> gồm &lt;code>n&lt;/code> số nguyên dương. Bạn được phép thực hiện thao tác sau với số lần tùy thích: đặt &lt;code>a[i] = a[i] % x&lt;/code>, &lt;code>x&lt;/code> là số nguyên dương mà bạn chọn.
+Hỏi có thể thu được mảng &lt;code>a&lt;/code> gồm &lt;code>n&lt;/code> phần tử là hoán vị từ &lt;code>[1, n]&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1e4
+1≤n≤1e5
+1≤ai≤1e9
+It is guaranteed that the sum of n over all test cases does not exceed 2e5.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+2
+1 7
+3
+1 5 4
+4
+12345678 87654321 20211218 23571113
+9
+1 2 3 4 18 19 5 6 7
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1
+-1
+4
+2
+&lt;/code>&lt;/pre></description></item></channel></rss>

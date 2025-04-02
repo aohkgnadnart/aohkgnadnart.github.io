@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dsu on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/dsu/</link><description>Recent content in Dsu on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/dsu/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: People are leaving</title><link>http://localhost:1313/posts/2021-10-10-Peopleareleaving/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-10-Peopleareleaving/</guid><description>&lt;p>Cho &lt;code>n&lt;/code> người đang đứng ở vị trí từ &lt;code>1&lt;/code> tới &lt;code>n&lt;/code>. Bạn phải thực hiện các truy vấn thuộc &lt;code>2&lt;/code> loại:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>- x&lt;/code> Người ở vị trí &lt;code>x&lt;/code> rời đi.&lt;/li>
+&lt;li>&lt;code>? x&lt;/code> Người gần nhất bên phải vị trí &lt;code>x&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤n,m≤106
+1≤x≤n
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>5 10
+? 1
+- 3
+? 3
+- 2
+? 1
+? 2
+- 4
+? 3
+- 5
+? 3
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1
+4
+1
+4
+5
+-1
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Quảng cáo</title><link>http://localhost:1313/posts/2021-10-21-quangcao/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-21-quangcao/</guid><description>&lt;p>Nhân dịp Tết sắp đến công ty Jelly-for-Kids quyết định tăng cường việc quảng bá sản phẩm đến người tiêu dùng. Vì thế giám đốc marketing, ông Fruit-Jelly muốn gửi đi số lượng nhân viên tối đa có thể, làm nhiệm vụ tiếp thị tại đại lý trong thành phố&lt;/p>
+&lt;p>Trong thành phố có m con đường, n đại lý bán kẹo (đánh số từ 1 đến n). Mỗi con đường chỉ nối trực tiếp giữa 2 đại lý, và được ký hiệu bằng chỉ số của 2 đại lý mà nó nối. Đồng thời, giữa 2 đại lý bất kỳ có không quá 1 con đường nối chúng&lt;/p>
+&lt;p>Ông Fruit-Jelly nghĩ rằng, ông ta sẽ quản lý nhân viên dễ hơn nếu xếp mỗi người tiếp thị trên những hành trình có tính chất thứ tự. Tức là những đại lý bán kẹo trên hành trình đó thỏa các điều kiện sau&lt;/p>
+&lt;p>Có đường nối trực tiếp giữa 2 đại lý liên tiếp nhau trên hành trình&lt;/p>
+&lt;p>Từ một đại lý bất kỳ trong hành trình có thể đi qua tất cả các đoạn đường trong hành trình đó rồi trở về nơi xuất phát mà không đi qua đoạn đường nào quá một lần&lt;/p>
+&lt;p>Hành trình phân công cho mỗi nhân viên phải có ít nhất một đoạn đường chưa có nhân viên nào khác đi tiếp thị.&lt;/p>
+&lt;p>Mỗi nhân viên chỉ di chuyển trên hành trình mà anh ta được phân công. Hãy tính số lượng nhân viên tối đa mà ông Fruit-Jelly có thể xếp việc, và hành trình cụ thể mà mỗi người được xếp.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>N &amp;lt;= 2000
+M &amp;lt;= 5000
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>5 6
+1 2
+2 4
+4 5
+3 5
+1 3
+2 3
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Robin</title><link>http://localhost:1313/posts/2021-10-21-Robin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-21-Robin/</guid><description>&lt;p>Một ngày đẹp trời nọ, trên vương quốc của các Coders 2011, bỗng xuất hiện 1 lão phù thủy độc ác, lão phù thủy sirDat_LS đã có âm mưu thôn tính đất nước của đức vua vodanh9x. Lão phù thủy này rất yêu con gái của đức vua là Rose và đã bắt Rose về nơi ở của lão ta.&lt;/p>
+&lt;p>Đức vua vodanh9x liền tìm hiệp sĩ Robin và sẽ hứa gả con gái cho Robin nếu chàng cứu được công chúa Rose trở về. Lão phù thủy sirDat_LS độc ác với khuôn mặt rất ghê tởm khiến công chúa mỗi khi nhìn thấy hắn thì công chúa lại ngất đi.&lt;/p>
+&lt;p>Và rồi, chàng Robin của chúng ta đã tìm được đến nơi ở của lão phù thủy. Nơi ở của lão là 1 mê cung có N phòng, và N phòng này liên thông với nhau và có đúng N-1 đường đi (coi mỗi đường đi là 1 cạnh).&lt;/p>
+&lt;p>Nhưng khó khăn thay, lão phù thủy đã đánh số mỗi đường đi là 1 hoặc 2. Nếu chàng Robin muốn đến cứu công chúa, thì từ nơi xuất phát đến nơi có công chúa phải có ít nhất một đường đi được đánh số 2, nếu không chàng Robin sẽ chết.&lt;/p>
+&lt;p>Yêu cầu: Cho m truy vấn (m &amp;lt;= 10^5) mỗi truy vấn có dạng (x,y), trong đó x là nơi xuất phát của Robin và y là nơi nhốt công chúa. Xác định đường đi ngắn nhất từ x đến y có cạnh co trọng số 2 hay không.&lt;/p></description></item></channel></rss>

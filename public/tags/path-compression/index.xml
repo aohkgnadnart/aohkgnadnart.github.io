@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Path-Compression on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/path-compression/</link><description>Recent content in Path-Compression on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/path-compression/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: People are leaving</title><link>http://localhost:1313/posts/2021-10-10-Peopleareleaving/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-10-Peopleareleaving/</guid><description>&lt;p>Cho &lt;code>n&lt;/code> người đang đứng ở vị trí từ &lt;code>1&lt;/code> tới &lt;code>n&lt;/code>. Bạn phải thực hiện các truy vấn thuộc &lt;code>2&lt;/code> loại:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>- x&lt;/code> Người ở vị trí &lt;code>x&lt;/code> rời đi.&lt;/li>
+&lt;li>&lt;code>? x&lt;/code> Người gần nhất bên phải vị trí &lt;code>x&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤n,m≤106
+1≤x≤n
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>5 10
+? 1
+- 3
+? 3
+- 2
+? 1
+? 2
+- 4
+? 3
+- 5
+? 3
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1
+4
+1
+4
+5
+-1
+&lt;/code>&lt;/pre></description></item></channel></rss>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Recursion on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/recursion/</link><description>Recent content in Recursion on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/recursion/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: Chênh lệch không quá 1</title><link>http://localhost:1313/posts/2021-12-03-digitone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-03-digitone/</guid><description>&lt;p>Một số được gọi là số cân bằng nếu chênh lệch giữa hai chữ số liên tiếp là không quá 1, chẳng hạn như 34322,56654322,45,8,&amp;hellip;. Số có một chữ số cũng được xem là số cân bằng.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>T≤10
+1≤L≤R≤1e100000
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+1 9
+25 47
+14 19
+1 999999999999999999999999999
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>9
+6
+0
+299194653
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Gray code</title><link>http://localhost:1313/posts/2021-10-12-Graycode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-12-Graycode/</guid><description>&lt;p>Mã màu xám là danh sách tất cả &lt;code>2^n&lt;/code> chuỗi bit có độ dài &lt;code>n&lt;/code>, trong đó hai chuỗi liên tiếp bất kỳ khác nhau đúng một bit (tức là khoảng cách Hamming của chúng là một).&lt;/p>
+&lt;p>Nhiệm vụ của bạn là tạo mã Xám cho một độ dài nhất định &lt;code>n&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤n≤16
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>00
+01
+11
+10
+&lt;/code>&lt;/pre></description></item><item><title>Problem: X-Magic Pair</title><link>http://localhost:1313/posts/2021-12-03-X-Magic-Pair/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-03-X-Magic-Pair/</guid><description>&lt;p>Bạn được cung cấp một cặp số nguyên &lt;code>(a,b)&lt;/code> và một số nguyên &lt;code>x&lt;/code>.&lt;/p>
+&lt;p>Bạn có thể thay đổi cặp theo hai cách khác nhau: set (gán) &lt;code>a=|a−b|&lt;/code>;set (gán) &lt;code>b=|a−b|&lt;/code>,&lt;/p>
+&lt;p>Cặp &lt;code>(a,b)&lt;/code> được gọi là x-magic nếu &lt;code>x&lt;/code> có thể đạt được như &lt;code>a&lt;/code> hoặc như &lt;code>b&lt;/code> chỉ sử dụng các phép toán đã cho (tức là cặp &lt;code>(a,b)&lt;/code> có &lt;code>a = x&lt;/code> hoặc &lt;code>b = x&lt;/code>).&lt;/p>
+&lt;p>Nhiệm vụ của bạn là tìm xem cặp &lt;code>(a,b)&lt;/code> là x-magic hay không.&lt;/p>
+&lt;p>Bạn phải trả lời t trường hợp thử nghiệm độc lập.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 &amp;lt;= t &amp;lt;= 1e4
+1 &amp;lt;= a, b, x &amp;lt;= 1e18
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>8
+6 9 3
+15 38 7
+18 8 8
+30 30 30
+40 50 90
+24 28 20
+365 216 52
+537037812705867558 338887693834423551 3199921013340
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>YES
+YES
+YES
+YES
+NO
+YES
+YES
+YES
+&lt;/code>&lt;/pre></description></item></channel></rss>

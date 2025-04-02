@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Graph on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/graph/</link><description>Recent content in Graph on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/graph/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: Make Bipartite</title><link>http://localhost:1313/posts/2021-12-03-MakeBipartite/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-03-MakeBipartite/</guid><description>&lt;p>Cho một đồ thị vô hướng với n+1 các đỉnh đánh số từ [0:n]&lt;/p>
+&lt;p>Với mỗi i=1,2,…,n, đồ thị có một cạnh vô hướng với trọng số là a[i] nối đỉnh i và đỉnh 0.&lt;/p>
+&lt;p>Ngoài ra, đối với mỗi i=1,2,…,n, đồ thị có một cạnh vô hướng với trọng số là b[i] kết nối đỉnh i và đỉnh i + 1(riêng i = n thì kết nối đỉnh n và 1)&lt;/p>
+&lt;p>Biểu đồ không có cạnh nào ngoài các cạnh này N * 2 các cạnh trên.&lt;/p>
+&lt;p>Hãy để chúng tôi xóa một số cạnh khỏi biểu đồ này để biểu đồ sẽ là lưỡng phân.&lt;/p>
+&lt;p>Tổng trọng lượng tối thiểu của các cạnh phải bị xóa là bao nhiêu?&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3 &amp;lt;= n &amp;lt;= 2e5
+1 &amp;lt;= a[i], b[i] &amp;lt;= 1e9
+tất cả giá trị trong input đều nguyên
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>5
+31 4 159 2 65
+5 5 5 5 10
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>16
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Quảng cáo</title><link>http://localhost:1313/posts/2021-10-21-quangcao/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-21-quangcao/</guid><description>&lt;p>Nhân dịp Tết sắp đến công ty Jelly-for-Kids quyết định tăng cường việc quảng bá sản phẩm đến người tiêu dùng. Vì thế giám đốc marketing, ông Fruit-Jelly muốn gửi đi số lượng nhân viên tối đa có thể, làm nhiệm vụ tiếp thị tại đại lý trong thành phố&lt;/p>
+&lt;p>Trong thành phố có m con đường, n đại lý bán kẹo (đánh số từ 1 đến n). Mỗi con đường chỉ nối trực tiếp giữa 2 đại lý, và được ký hiệu bằng chỉ số của 2 đại lý mà nó nối. Đồng thời, giữa 2 đại lý bất kỳ có không quá 1 con đường nối chúng&lt;/p>
+&lt;p>Ông Fruit-Jelly nghĩ rằng, ông ta sẽ quản lý nhân viên dễ hơn nếu xếp mỗi người tiếp thị trên những hành trình có tính chất thứ tự. Tức là những đại lý bán kẹo trên hành trình đó thỏa các điều kiện sau&lt;/p>
+&lt;p>Có đường nối trực tiếp giữa 2 đại lý liên tiếp nhau trên hành trình&lt;/p>
+&lt;p>Từ một đại lý bất kỳ trong hành trình có thể đi qua tất cả các đoạn đường trong hành trình đó rồi trở về nơi xuất phát mà không đi qua đoạn đường nào quá một lần&lt;/p>
+&lt;p>Hành trình phân công cho mỗi nhân viên phải có ít nhất một đoạn đường chưa có nhân viên nào khác đi tiếp thị.&lt;/p>
+&lt;p>Mỗi nhân viên chỉ di chuyển trên hành trình mà anh ta được phân công. Hãy tính số lượng nhân viên tối đa mà ông Fruit-Jelly có thể xếp việc, và hành trình cụ thể mà mỗi người được xếp.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>N &amp;lt;= 2000
+M &amp;lt;= 5000
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>5 6
+1 2
+2 4
+4 5
+3 5
+1 3
+2 3
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Remembering Strings</title><link>http://localhost:1313/posts/2021-12-02-RememberingStrings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-02-RememberingStrings/</guid><description>&lt;p>Bạn có nhiều tập hợp &lt;code>n&lt;/code> chuỗi có cùng độ dài, bao gồm các chữ cái tiếng Anh viết thường. Chúng ta sẽ nói rằng những chuỗi đó dễ nhớ nếu đối với mỗi chuỗi có một số vị trí &lt;code>i&lt;/code> và một số chữ cái &lt;code>c&lt;/code> của bảng chữ cái tiếng Anh, sao cho chuỗi này là chuỗi duy nhất trong tập hợp đa có chữ &lt;code>c&lt;/code> ở vị trí &lt;code>i&lt;/code>.&lt;/p>
+&lt;p>Ví dụ: một tập hợp nhiều chuỗi &lt;code>{&amp;quot;abc&amp;quot;, &amp;quot;aba&amp;quot;, &amp;quot;adc&amp;quot;, &amp;quot;ada&amp;quot;}&lt;/code> không dễ nhớ. Và multiset &lt;code>{&amp;quot;abc&amp;quot;, &amp;quot;ada&amp;quot;, &amp;quot;ssa&amp;quot;}&lt;/code> rất dễ nhớ vì:
+chuỗi đầu tiên là chuỗi duy nhất có ký tự &lt;code>c&lt;/code> ở vị trí &lt;code>3&lt;/code> ;
+chuỗi thứ hai là chuỗi duy nhất có ký tự &lt;code>d&lt;/code> ở vị trí &lt;code>2&lt;/code> ;
+chuỗi thứ ba là chuỗi duy nhất có ký tự &lt;code>s&lt;/code> ở vị trí &lt;code>2&lt;/code> .&lt;/p>
+&lt;p>Bạn muốn thay đổi một chút bộ đa năng của mình để dễ nhớ. Đối với &lt;code>aij&lt;/code> tiền xu, bạn có thể thay đổi nhân vật trong &lt;code>j&lt;/code> vị trí -thứ &lt;code>i&lt;/code> của chuỗi -thứ vào bất kỳ chữ cái thường khác của bảng chữ cái tiếng Anh. Tìm số tiền tối thiểu bạn phải trả là bao nhiêu để làm cho tập hợp nhiều chuỗi dễ nhớ.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 &amp;lt;= n, m &amp;lt;= 20
+0 &amp;lt;= aij &amp;lt;= 1e6
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4 5
+abcde
+abcde
+abcde
+abcde
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+&lt;/code>&lt;/pre></description></item><item><title>Problem: The Number of Imposters</title><link>http://localhost:1313/posts/2021-10-12-TheNumberofImposters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-12-TheNumberofImposters/</guid><description>&lt;p>Cho &lt;code>n&lt;/code> người chơi cùng chơi game. mỗi người sẽ là &lt;code>imposter&lt;/code> hoặc &lt;code>crewmate&lt;/code>. &lt;code>imposter&lt;/code> là người luôn nói dối, cewmate là người luôn nói thật. cho &lt;code>m&lt;/code> nhận xét có dạng &lt;code>(i, j, c)&lt;/code> ví dụ: &lt;code>1 2 imposter&lt;/code>, tức là người chơi &lt;code>1&lt;/code> nói người chơi &lt;code>2&lt;/code> là &lt;code>imposter&lt;/code>, như vậy nếu người chơi &lt;code>2&lt;/code> đúng là &lt;code>imposter&lt;/code> thì người chơi &lt;code>1&lt;/code> là &lt;code>crewmate&lt;/code>, và ngược lại.
+Tính số lượng &lt;strong>tối đa&lt;/strong> imposter trong game.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1e4
+1≤n≤2e5
+0≤m≤5e5
+the structure &amp;#34;i j c&amp;#34; where i and j are two distinct integers and c is a string (1≤i,j≤n; i≠j; c is either imposter or crewmate
+There can be multiple comments for the same pair of (i,j).
+It is guaranteed that the sum of all n does not exceed 2e5 and the sum of all m does not exceed 5e5.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>5
+3 2
+1 2 imposter
+2 3 crewmate
+5 4
+1 3 crewmate
+2 5 crewmate
+2 4 imposter
+3 4 imposter
+2 2
+1 2 imposter
+2 1 crewmate
+3 5
+1 2 imposter
+1 2 imposter
+3 2 crewmate
+3 2 crewmate
+1 3 imposter
+5 0
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+4
+-1
+2
+5
+&lt;/code>&lt;/pre></description></item></channel></rss>

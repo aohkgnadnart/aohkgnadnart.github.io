@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Digit on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/digit/</link><description>Recent content in Digit on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/digit/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: Chênh lệch không quá 1</title><link>http://localhost:1313/posts/2021-12-03-digitone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-03-digitone/</guid><description>&lt;p>Một số được gọi là số cân bằng nếu chênh lệch giữa hai chữ số liên tiếp là không quá 1, chẳng hạn như 34322,56654322,45,8,&amp;hellip;. Số có một chữ số cũng được xem là số cân bằng.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>T≤10
+1≤L≤R≤1e100000
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+1 9
+25 47
+14 19
+1 999999999999999999999999999
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>9
+6
+0
+299194653
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Special Number</title><link>http://localhost:1313/posts/2021-12-25-SpecialNumber/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-25-SpecialNumber/</guid><description>&lt;p>Đếm số cặp số nguyên dương &lt;code>(x, y)&lt;/code> sao cho &lt;code>x + 2y = N&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 &amp;lt;= N &amp;lt;= 1e15
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>100
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>7
+&lt;/code>&lt;/pre></description></item></channel></rss>

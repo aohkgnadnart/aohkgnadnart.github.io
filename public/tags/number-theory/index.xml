@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Number Theory on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/number-theory/</link><description>Recent content in Number Theory on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/number-theory/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: Di-visible Confusion</title><link>http://localhost:1313/posts/2021-11-02-Di-visibleConfusion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-02-Di-visibleConfusion/</guid><description>&lt;p>Cho mảng a có n phần tử. Hỏi có thể xóa tất cả các phần tử của mảng hay không? phần tử &lt;code>a[i]&lt;/code> được xóa khi &lt;code>a[i]&lt;/code> không chia hết cho &lt;code>i + 1&lt;/code>, với &lt;code>1 &amp;lt;= i &amp;lt;= |x|&lt;/code>.
+Chỉ số được đánh từ 1, cập nhật lại sau mỗi thao tác xóa.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤10000
+1≤n≤1e5
+1≤ai≤1e9
+It is guaranteed that the sum of n over all test cases doesn&amp;#39;t exceed 3e5.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>5
+3
+1 2 3
+1
+2
+2
+7 7
+10
+384836991 191890310 576823355 782177068 404011431 818008580 954291757 160449218 155374934 840594328
+8
+6 69 696 69696 696969 6969696 69696969 696969696
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>YES
+NO
+YES
+YES
+NO
+&lt;/code>&lt;/pre></description></item></channel></rss>

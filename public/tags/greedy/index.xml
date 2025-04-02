@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Greedy on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/greedy/</link><description>Recent content in Greedy on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/greedy/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: Di-visible Confusion</title><link>http://localhost:1313/posts/2021-11-02-Di-visibleConfusion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-02-Di-visibleConfusion/</guid><description>&lt;p>Cho mảng a có n phần tử. Hỏi có thể xóa tất cả các phần tử của mảng hay không? phần tử &lt;code>a[i]&lt;/code> được xóa khi &lt;code>a[i]&lt;/code> không chia hết cho &lt;code>i + 1&lt;/code>, với &lt;code>1 &amp;lt;= i &amp;lt;= |x|&lt;/code>.
+Chỉ số được đánh từ 1, cập nhật lại sau mỗi thao tác xóa.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤10000
+1≤n≤1e5
+1≤ai≤1e9
+It is guaranteed that the sum of n over all test cases doesn&amp;#39;t exceed 3e5.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>5
+3
+1 2 3
+1
+2
+2
+7 7
+10
+384836991 191890310 576823355 782177068 404011431 818008580 954291757 160449218 155374934 840594328
+8
+6 69 696 69696 696969 6969696 69696969 696969696
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>YES
+NO
+YES
+YES
+NO
+&lt;/code>&lt;/pre></description></item><item><title>Problem: ACM</title><link>http://localhost:1313/posts/2021-10-21-ACM/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-21-ACM/</guid><description>&lt;p>SuperCoders là đội tuyển huyền thoại của trường XYZ đã nhiều lần vô địch cuộc thi lập trình viên vũ trụ ACM Universe Final. Theo thể thức cuộc thi, mỗi đội tham dự chỉ có &lt;strong>đúng&lt;/strong> &lt;code>3&lt;/code> thành viên và được giao duy nhất &lt;code>1&lt;/code> máy tính, chính vì vậy việc điều phối công việc vô cùng quan trọng. Trong đội SuperCoders, PHUONGHD - đội trưởng - là người nắm giữ vai trò đó.&lt;/p>
+&lt;p>Đề thi ACM năm nay gồm có &lt;code>2n&lt;/code> bài đánh số từ &lt;code>1&lt;/code> tới &lt;code>2n&lt;/code>. Bằng kỹ năng thiết kế thuật toán siêu việt, chỉ vài giây sau khi đọc đề, PHUONGHD đã có lời giải cho cả &lt;code>2n&lt;/code> bài. Vấn đề còn lại là phân công hai người còn lại lập trình bởi PHUONGHD không quen với thứ ngôn ngữ lập trình mới được đưa vào sử dụng tại cuộc thi.&lt;/p>
+&lt;p>Do rất hiểu hai lập trình viên Tí và Tèo trong đội, PHUONGHD biết rằng bài thứ &lt;code>i&lt;/code> nếu giao cho Tí làm sẽ mất
+&lt;code>ai&lt;/code> giây, cũng bài đó nếu giao cho Tèo sẽ mất &lt;code>bi&lt;/code> giây để hoàn thành &lt;code>(∀i: 1 ≤ i ≤ 2n)&lt;/code>. Nhiệm vụ của bạn là hãy giúp PHUONGHD phân công cho hai lập trình viên, mỗi người làm &lt;strong>đúng&lt;/strong> &lt;code>n&lt;/code> bài sao cho tổng thời gian lập trình cả &lt;code>2n&lt;/code> bài là &lt;strong>ít nhất&lt;/strong>.&lt;/p></description></item><item><title>Problem: Blue-Red Permutation</title><link>http://localhost:1313/posts/2021-11-03-Blue-Red-Permutation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-03-Blue-Red-Permutation/</guid><description>&lt;p>Cho mảng n phần tử. Nếu phần tử có màu đỏ,được tăng giá trị.
+Nếu phần tử có màu xanh, được giảm giá trị. Hỏi sau cùng có thể thu được, mảng hoán vị của n hay không?&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1e4
+1≤n≤2⋅1e5
+−1e9≤ai≤1e9
+It is guaranteed that the sum of n over all input sets does not exceed 2e5.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>8
+4
+1 2 5 2
+BRBR
+2
+1 1
+BB
+5
+3 1 4 2 5
+RBRRB
+5
+3 1 3 1 3
+RBRRB
+5
+5 1 5 1 5
+RBRRB
+4
+2 2 2 2
+BRBR
+2
+1 -2
+BR
+4
+-2 -1 4 0
+RRRR
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>YES
+NO
+YES
+YES
+NO
+YES
+YES
+YES
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Minimize Distance</title><link>http://localhost:1313/posts/2021-12-17-MinimizeDistance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-17-MinimizeDistance/</guid><description>&lt;p>Tổng cộng &lt;code>n&lt;/code> các kho hàng nằm trên một dãy số. kho chứatôi nằm ở điểm &lt;code>xi&lt;/code> vì &lt;code>1 ≤ i ≤ n&lt;/code>.&lt;/p>
+&lt;p>Bạn là một nhân viên bán hàng với &lt;code>n&lt;/code> các túi hàng hóa, cố gắng phân phối một túi cho mỗi nkho bãi. Bạn vàn túi ban đầu ở nguồn gốc 0. Bạn có thể mang đếnktúi tại một thời điểm. Bạn phải thu thập số lượng hàng hóa cần thiết từ điểm xuất phát, chuyển chúng đến các kho tương ứng, sau đó quay trở lại điểm xuất phát để lấy lô hàng tiếp theo của bạn.&lt;/p>
+&lt;p>Tính toán khoảng cách tối thiểu bạn cần phải trải qua để chuyển tất cả các túi hàng hóa đến kho hàng. Bạn không phải trả lại nguồn gốc sau khi bạn đã giao tất cả các túi.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤10500
+1≤k≤n≤2e5
+−109≤xi≤109
+It is guaranteed that the sum of n over all test cases does not exceed 2e5.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+5 1
+1 2 3 4 5
+9 3
+-5 -10 -15 6 5 8 3 7 4
+5 3
+2 2 3 3 3
+4 2
+1000000000 1000000000 1000000000 1000000000
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>25
+41
+7
+3000000000
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Paprika and Permutation</title><link>http://localhost:1313/posts/2021-12-17-PaprikaandPermutation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-17-PaprikaandPermutation/</guid><description>&lt;p>Cho mảng &lt;code>a&lt;/code> gồm &lt;code>n&lt;/code> số nguyên dương. Bạn được phép thực hiện thao tác sau với số lần tùy thích: đặt &lt;code>a[i] = a[i] % x&lt;/code>, &lt;code>x&lt;/code> là số nguyên dương mà bạn chọn.
+Hỏi có thể thu được mảng &lt;code>a&lt;/code> gồm &lt;code>n&lt;/code> phần tử là hoán vị từ &lt;code>[1, n]&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1e4
+1≤n≤1e5
+1≤ai≤1e9
+It is guaranteed that the sum of n over all test cases does not exceed 2e5.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+2
+1 7
+3
+1 5 4
+4
+12345678 87654321 20211218 23571113
+9
+1 2 3 4 18 19 5 6 7
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1
+-1
+4
+2
+&lt;/code>&lt;/pre></description></item></channel></rss>

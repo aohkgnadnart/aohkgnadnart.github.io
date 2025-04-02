@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Trie on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/trie/</link><description>Recent content in Trie on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/trie/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: Search Engine</title><link>http://localhost:1313/posts/2021-11-03-SearchEngine/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-03-SearchEngine/</guid><description>&lt;p>Cho mảng n phần tử, mỗi phần tử gồm 1 chuỗi và 1 trọng số. Cho q truy vấn, mỗi truy vấn là một chuỗi x.
+Tìm chuỗi y trong mảng a sao cho x là tiền tố của y và trọng số của y là lớn nhất có thể.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 ≤ n, weight, len(s), len(t) ≤ 1e6
+1 ≤ q ≤ 1e5
+total length of all strings in database entries ≤ 1e6
+total length of all query strings ≤ 1e6
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Word Combinations</title><link>http://localhost:1313/posts/2021-11-03-WordCombinations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-03-WordCombinations/</guid><description>&lt;p>Cho 1 chuỗi s và n chuỗi. Hỏi có bao nhiêu cách tạo nên chuỗi s từ các chuỗi trong n chuỗi. Kết quả được lấy dư cho &lt;code>1e9 + 7&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤n≤5000 
+1≤k≤1e5
+the total length of the words is at most 1e6
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+ab
+abab
+c
+cb
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+&lt;/code>&lt;/pre></description></item></channel></rss>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Indexed_set on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/indexed_set/</link><description>Recent content in Indexed_set on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/indexed_set/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: Shifting Sort</title><link>http://localhost:1313/posts/2021-09-20-ShiftingSort/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-09-20-ShiftingSort/</guid><description>&lt;p>Cho một mảng số nguyên. Hãy sắp xếp lại mảng. Được sử dụng thao tác sau không quá &lt;code>n&lt;/code> lần: chọn &lt;code>1&lt;/code> đoạn &lt;code>[l,r]&lt;/code> của mảng, dịch sang trái &lt;code>k&lt;/code> vị trí. Ví dụ &lt;code>2, 5, 3&lt;/code> dịch sang trái &lt;code>1&lt;/code> đơn vị sẽ là &lt;code>5, 3, 2&lt;/code>. Xuất ra các thao tác đã thực hiện để thu được mảng không giảm.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1000
+2≤n≤50
+−1e9≤ai≤1e9
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+2
+2 1
+3
+1 2 1
+4
+2 4 1 3
+5
+2 5 1 4 3
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1
+1 2 1
+1
+1 3 2
+3
+2 4 1
+2 3 1
+1 3 2
+4
+2 4 2
+1 5 3
+1 2 1
+1 3 1
+&lt;/code>&lt;/pre></description></item></channel></rss>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tree on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/tree/</link><description>Recent content in Tree on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/tree/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: Best Sum Any Tree Path</title><link>http://localhost:1313/posts/2021-11-02-BestSumAnyTreePath/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-02-BestSumAnyTreePath/</guid><description>&lt;p>Cho cây có n &lt;code>(1 ≤ n ≤ 1e5)&lt;/code> đỉnh đánh số từ 0 tới n - 1, cha của các đỉnh và trọng số của các đỉnh. Tìm được đi có tổng trọng số lớn nhất.
+Biết &lt;code>root = 0&lt;/code>, &lt;code>parent[0] = -1&lt;/code>&lt;/p>
+&lt;p>
+ &lt;img src="https://user-images.githubusercontent.com/83690404/139783508-40aba718-91f5-4761-8946-5f93adada1c7.png" alt="Screenshot 2021-11-02 101706" />&lt;/p></description></item><item><title>Problem: Omkar and Heavenly Tree</title><link>http://localhost:1313/posts/2021-10-19-OmkarandHeavenlyTree/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-19-OmkarandHeavenlyTree/</guid><description>&lt;p>Tìm một cây có n đỉnh, thỏa mãn &lt;code>m&lt;/code> &lt;code>(m &amp;lt; n)&lt;/code> yêu cầu. Mỗi yêu cầu gồm &lt;code>3&lt;/code> cố &lt;code>a, b, c&lt;/code>, hiểu là trên đường đi đơn giản từ đỉnh &lt;code>a&lt;/code> tới đỉnh &lt;code>c&lt;/code> không chứa đỉnh &lt;code>b&lt;/code>.
+Xuất ra &lt;code>n - 1&lt;/code> cạnh của cây. Dễ dàng chứng minh được luôn tồn tại đáp án.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1e4
+3≤n≤105
+1≤m&amp;lt;n
+1≤ai,bi,ci≤n, a, b, c are distinct
+It is guaranteed that the sum of n across all test cases will not exceed 105.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+7 4
+1 2 3
+3 4 5
+5 6 7
+6 5 4
+5 3
+1 2 3
+2 3 4
+3 4 5
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 2
+1 3
+3 5
+3 4
+2 7
+7 6
+5 1
+1 3
+3 2
+2 4
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Road Improvement</title><link>http://localhost:1313/posts/2021-12-02-RoadImprovement/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-02-RoadImprovement/</guid><description>&lt;p>Đất nước có &lt;code>n&lt;/code> thành phố và &lt;code>n - 1&lt;/code> con đường hai chiều, bạn có thể đi từ mọi thành phố này đến bất kỳ thành phố nào khác nếu bạn chỉ di chuyển dọc theo các con đường. Các thành phố được đánh số bằng các số nguyên từ &lt;code>1&lt;/code> đến &lt;code>n&lt;/code>.&lt;/p>
+&lt;p>Tất cả các con đường ban đầu đều xấu, nhưng chính phủ muốn cải thiện tình trạng của một số con đường. Chúng tôi sẽ cho rằng người dân hài lòng về việc cải tạo đường nếu con đường từ thủ đô nằm ở thành phố &lt;code>x&lt;/code> đến bất kỳ thành phố nào khác có nhiều nhất một con đường xấu.&lt;/p>
+&lt;p>Nhiệm vụ của bạn là với mọi &lt;code>x&lt;/code> có thể xác định số cách cải thiện chất lượng của một số con đường để đáp ứng điều kiện của người dân. Vì những giá trị đó có thể khá lớn, bạn cần in từng mô-đun giá trị &lt;code>1000000007&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>n &amp;lt;= 2e5
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+1 1
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4 3 3
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Robin</title><link>http://localhost:1313/posts/2021-10-21-Robin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-21-Robin/</guid><description>&lt;p>Một ngày đẹp trời nọ, trên vương quốc của các Coders 2011, bỗng xuất hiện 1 lão phù thủy độc ác, lão phù thủy sirDat_LS đã có âm mưu thôn tính đất nước của đức vua vodanh9x. Lão phù thủy này rất yêu con gái của đức vua là Rose và đã bắt Rose về nơi ở của lão ta.&lt;/p>
+&lt;p>Đức vua vodanh9x liền tìm hiệp sĩ Robin và sẽ hứa gả con gái cho Robin nếu chàng cứu được công chúa Rose trở về. Lão phù thủy sirDat_LS độc ác với khuôn mặt rất ghê tởm khiến công chúa mỗi khi nhìn thấy hắn thì công chúa lại ngất đi.&lt;/p>
+&lt;p>Và rồi, chàng Robin của chúng ta đã tìm được đến nơi ở của lão phù thủy. Nơi ở của lão là 1 mê cung có N phòng, và N phòng này liên thông với nhau và có đúng N-1 đường đi (coi mỗi đường đi là 1 cạnh).&lt;/p>
+&lt;p>Nhưng khó khăn thay, lão phù thủy đã đánh số mỗi đường đi là 1 hoặc 2. Nếu chàng Robin muốn đến cứu công chúa, thì từ nơi xuất phát đến nơi có công chúa phải có ít nhất một đường đi được đánh số 2, nếu không chàng Robin sẽ chết.&lt;/p>
+&lt;p>Yêu cầu: Cho m truy vấn (m &amp;lt;= 10^5) mỗi truy vấn có dạng (x,y), trong đó x là nơi xuất phát của Robin và y là nơi nhốt công chúa. Xác định đường đi ngắn nhất từ x đến y có cạnh co trọng số 2 hay không.&lt;/p></description></item><item><title>Problem: Tom and Jery</title><link>http://localhost:1313/posts/2021-12-17-TomandJery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-17-TomandJery/</guid><description>&lt;p>Tom và Jerry đang đuổi theo nhau trong một mê cung được hình thành như một cái cây.
+Cây này có &lt;code>𝑛&lt;/code> nút. Jerry hiện đang ở nút &lt;code>𝑥&lt;/code> và có một quả bom do Tom đặt ở đây.
+Bom có tầm bắn &lt;code>𝑡&lt;/code> nên khi phát nổ, tất cả các nút có khoảng cách đến nút 𝑥 nhỏ hơn hoặc bằng &lt;code>𝑡&lt;/code> sẽ bị cháy.
+Nếu Jerry bị cháy, anh ta sẽ bị ngất và bị Tom bắt. Tất nhiên, Jerry muốn thoát khỏi khu vực phát nổ bằng cách chạy qua các cạnh trong mê cung.
+Mặt khác, Tom muốn bắt Jerry nên định chặn một vài cạnh trên mê cung để Jerry không thể di chuyển qua các cạnh này.
+Nhiệm vụ: Đưa ra một tập hợp &lt;code>𝑚&lt;/code> truy vấn, mỗi truy vấn có hai số &lt;code>𝑥&lt;/code> và &lt;code>𝑡&lt;/code>, cho biết nút ban đầu mà Jerry và quả bom hiện đang ở, và phạm vi của quả bom.
+Hãy giúp Tom tìm số cạnh tối thiểu phải chặn để bắt được Jerry&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 ≤ 𝑛, 𝑚 ≤ 1e5
+1 ≤ 𝑢, 𝑣 ≤ 𝑛; 𝑢 ≠ 𝑣
+1 ≤ 𝑥 ≤ 𝑛; 0 ≤ 𝑡 ≤ 𝑛
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>7 3
+1 2
+2 3
+2 4
+3 5
+3 6
+4 7
+4 1
+2 2
+2 1
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1
+0
+2
+&lt;/code>&lt;/pre></description></item></channel></rss>

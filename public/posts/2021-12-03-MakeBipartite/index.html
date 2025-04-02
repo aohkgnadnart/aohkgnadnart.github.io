@@ -1,0 +1,45 @@
+<!doctype html><html lang=en dir=ltr><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Cho một đồ thị vô hướng với n+1 các đỉnh đánh số từ [0:n]
+Với mỗi i=1,2,…,n, đồ thị có một cạnh vô hướng với trọng số là a[i] nối đỉnh i và đỉnh 0.
+Ngoài ra, đối với mỗi i=1,2,…,n, đồ thị có một cạnh vô hướng với trọng số là b[i] kết nối đỉnh i và đỉnh i + 1(riêng i = n thì kết nối đỉnh n và 1)
+Biểu đồ không có cạnh nào ngoài các cạnh này N * 2 các cạnh trên.
+Hãy để chúng tôi xóa một số cạnh khỏi biểu đồ này để biểu đồ sẽ là lưỡng phân.
+Tổng trọng lượng tối thiểu của các cạnh phải bị xóa là bao nhiêu?
+Ràng buộc
+3 <= n <= 2e5
+1 <= a[i], b[i] <= 1e9
+tất cả giá trị trong input đều nguyên
+Input
+5
+31 4 159 2 65
+5 5 5 5 10
+Output
+16
+"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="http://localhost:1313/posts/2021-12-03-MakeBipartite/"><meta property="og:site_name" content="Aohkgnadnart Blog"><meta property="og:title" content="Problem: Make Bipartite"><meta property="og:description" content="Cho một đồ thị vô hướng với n+1 các đỉnh đánh số từ [0:n]
+Với mỗi i=1,2,…,n, đồ thị có một cạnh vô hướng với trọng số là a[i] nối đỉnh i và đỉnh 0.
+Ngoài ra, đối với mỗi i=1,2,…,n, đồ thị có một cạnh vô hướng với trọng số là b[i] kết nối đỉnh i và đỉnh i + 1(riêng i = n thì kết nối đỉnh n và 1)
+Biểu đồ không có cạnh nào ngoài các cạnh này N * 2 các cạnh trên.
+Hãy để chúng tôi xóa một số cạnh khỏi biểu đồ này để biểu đồ sẽ là lưỡng phân.
+Tổng trọng lượng tối thiểu của các cạnh phải bị xóa là bao nhiêu?
+Ràng buộc
+3 <= n <= 2e5 1 <= a[i], b[i] <= 1e9 tất cả giá trị trong input đều nguyên Input
+5 31 4 159 2 65 5 5 5 5 10 Output
+16"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:modified_time" content="2025-04-02T13:02:07+07:00"><meta property="article:tag" content="Cp"><meta property="article:tag" content="Pending"><meta property="article:tag" content="Graph"><meta property="article:tag" content="Dp"><title>Problem: Make Bipartite | Aohkgnadnart Blog</title>
+<link rel=icon href=/favicon.png><link rel=manifest href=/manifest.json><link rel=canonical href=http://localhost:1313/posts/2021-12-03-MakeBipartite/><link rel=stylesheet href=/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin=anonymous><script defer src=/fuse.min.js></script><script defer src=/en.search.min.13e139159b5ca30479736515fd7347cdfcfa90e8d16be14160001aec6b9261cd.js integrity="sha256-E+E5FZtcowR5c2UV/XNHzfz6kOjRa+FBYAAa7GuSYc0=" crossorigin=anonymous></script><script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>Aohkgnadnart Blog</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
+<label for=languages class="flex justify-between"><a role=button class="flex align-center"><img src=/svg/translate.svg class=book-icon alt=Languages>
+English</a></label><ul><li><a href=/zh/>Chinese</a></li><li><a href=/he/>Hebrew</a></li></ul></li></ul><ul><li class=book-section-flat><a href=/docs/example/>Trang Chủ</a><ul><li><input type=checkbox id=section-a5446993f02613041412a70215fe0f5e class=toggle>
+<label for=section-a5446993f02613041412a70215fe0f5e class="flex justify-between"><a role=button>Interview</a></label><ul><li><input type=checkbox id=section-aeab3a266eabe870acc3c276e725ff38 class=toggle>
+<label for=section-aeab3a266eabe870acc3c276e725ff38 class="flex justify-between"><a href=/docs/example/collapsed/3rd-level/>C++</a></label><ul></ul></li></ul></li></ul></li></ul><ul><li><a href=/posts/>Competitive Programming</a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label><h3>Problem: Make Bipartite</h3><label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents></nav></aside></header><article class="markdown book-post"><h2>Problem: Make Bipartite</h2><div class=text-small><a href=/tags/cp/>Cp</a>,
+<a href=/tags/pending/>Pending</a>,
+<a href=/tags/graph/>Graph</a>,
+<a href=/tags/dp/>Dp</a></div><div class=book-post-content><p>Cho một đồ thị vô hướng với n+1 các đỉnh đánh số từ [0:n]</p><p>Với mỗi i=1,2,…,n, đồ thị có một cạnh vô hướng với trọng số là a[i] nối đỉnh i và đỉnh 0.</p><p>Ngoài ra, đối với mỗi i=1,2,…,n, đồ thị có một cạnh vô hướng với trọng số là b[i] kết nối đỉnh i và đỉnh i + 1(riêng i = n thì kết nối đỉnh n và 1)</p><p>Biểu đồ không có cạnh nào ngoài các cạnh này N * 2 các cạnh trên.</p><p>Hãy để chúng tôi xóa một số cạnh khỏi biểu đồ này để biểu đồ sẽ là lưỡng phân.</p><p>Tổng trọng lượng tối thiểu của các cạnh phải bị xóa là bao nhiêu?</p><p><strong>Ràng buộc</strong></p><pre tabindex=0><code>3 &lt;= n &lt;= 2e5
+1 &lt;= a[i], b[i] &lt;= 1e9
+tất cả giá trị trong input đều nguyên
+</code></pre><p><strong>Input</strong></p><pre tabindex=0><code>5
+31 4 159 2 65
+5 5 5 5 10
+</code></pre><p><strong>Output</strong></p><pre tabindex=0><code>16
+</code></pre><p><em>Submit
+<a href=https://atcoder.jp/contests/abc229/tasks/abc229_f>tại đây</a></em></p><p><strong>Hướng dẫn</strong></p><p><strong>Code</strong></p><ul><li>Độ phưc tạp <strong>O()</strong></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp></code></pre></div></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/aohkgnadnart/aohkgnadnart.github.io/commit/a0c8e667603f813f954620fbb5ceb647c3b574bd title='Last modified by aohkgnadnart | April 2, 2025' target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt>
+<span>April 2, 2025</span></a></div><div><a class="flex align-center" href=#ZgotmplZ target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt>
+<span>Edit this page</span></a></div></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents></nav></div></aside></main></body></html>

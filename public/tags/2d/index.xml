@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>2d on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/2d/</link><description>Recent content in 2d on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/2d/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: Crazy Robot</title><link>http://localhost:1313/posts/2021-12-17-CrazyRobot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-17-CrazyRobot/</guid><description>&lt;p>Có một lưới, bao gồm n hàng và m cột. Mỗi ô của lưới là tự do hoặc bị chặn. Một trong những ô trống chứa phòng thí nghiệm. Tất cả các ô bên ngoài đường viền của lưới cũng bị chặn.&lt;/p>
+&lt;p>Một người máy điên rồ đã trốn thoát khỏi phòng thí nghiệm này. Nó hiện đang ở trong một số ô trống của lưới. Bạn có thể gửi một trong các lệnh sau tới rô bốt: &amp;ldquo;di chuyển sang phải&amp;rdquo;, &amp;ldquo;di chuyển xuống&amp;rdquo;, &amp;ldquo;di chuyển sang trái&amp;rdquo; hoặc &amp;ldquo;di chuyển lên trên&amp;rdquo;. Mỗi lệnh có nghĩa là di chuyển đến một ô lân cận theo hướng tương ứng.&lt;/p>
+&lt;p>Tuy nhiên, vì robot điên, nó sẽ làm bất cứ điều gì ngoại trừ việc tuân theo lệnh. Khi nhận được lệnh, nó sẽ chọn một hướng khác với hướng trong lệnh và ô ở hướng đó không bị chặn. Nếu có một hướng như vậy, thì nó sẽ di chuyển đến một ô lân cận theo hướng đó. Nếu không, nó sẽ không làm gì cả.&lt;/p>
+&lt;p>Chúng tôi muốn đưa robot đến phòng thí nghiệm để sửa nó. Đối với mỗi ô trống, hãy xác định xem liệu robot có thể bị buộc đến phòng thí nghiệm bắt đầu từ ô này hay không. Có nghĩa là, sau mỗi bước của rô bốt, một lệnh có thể được gửi đến rô bốt sao cho bất kể rô bốt chọn hướng nào khác nhau, nó sẽ kết thúc trong phòng thí nghiệm.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1000
+1≤n,m≤1e6; n x m≤1e6
+&amp;#39;.&amp;#39; — the cell is free;
+&amp;#39;#&amp;#39; — the cell is blocked;
+&amp;#39;L&amp;#39; — the cell contains a lab.
+The grid contains exactly one lab. The sum of n⋅m over all testcases doesn&amp;#39;t exceed 106.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+3 3
+...
+.L.
+...
+4 5
+#....
+..##L
+...#.
+.....
+1 1
+L
+1 9
+....L..#.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>...
+.L.
+...
+#++++
+..##L
+...#+
+...++
+L
+++++L++#.
+&lt;/code>&lt;/pre></description></item><item><title>Problem: HCN</title><link>http://localhost:1313/posts/2021-12-03-HCN/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-03-HCN/</guid><description>&lt;p>Cho 1 mảnh đất hình chữ nhật kích thước nxm được tạo nên từ các ô đất kích thước 1x1. Mỗi ô đất hoặc là đá hoặc là đất.&lt;/p>
+&lt;p>Trên mảnh đất này hãy tìm vùng đất hình chữ nhật có diện tích lớn nhất để xây nhà.
+Biết rằng bạn không thể xây nhà trên đá và ngôi nhà này phải có các cạnh song song với cạnh của mảnh đất đã cho.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>n,m≤1000
+aij = &amp;#39;.&amp;#39; or &amp;#39;*&amp;#39;
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>3 4
+..*.
+....
+*..*
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+&lt;/code>&lt;/pre></description></item></channel></rss>

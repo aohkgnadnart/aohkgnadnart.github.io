@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Connected Component on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/connected-component/</link><description>Recent content in Connected Component on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/connected-component/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: The Number of Imposters</title><link>http://localhost:1313/posts/2021-10-12-TheNumberofImposters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-12-TheNumberofImposters/</guid><description>&lt;p>Cho &lt;code>n&lt;/code> người chơi cùng chơi game. mỗi người sẽ là &lt;code>imposter&lt;/code> hoặc &lt;code>crewmate&lt;/code>. &lt;code>imposter&lt;/code> là người luôn nói dối, cewmate là người luôn nói thật. cho &lt;code>m&lt;/code> nhận xét có dạng &lt;code>(i, j, c)&lt;/code> ví dụ: &lt;code>1 2 imposter&lt;/code>, tức là người chơi &lt;code>1&lt;/code> nói người chơi &lt;code>2&lt;/code> là &lt;code>imposter&lt;/code>, như vậy nếu người chơi &lt;code>2&lt;/code> đúng là &lt;code>imposter&lt;/code> thì người chơi &lt;code>1&lt;/code> là &lt;code>crewmate&lt;/code>, và ngược lại.
+Tính số lượng &lt;strong>tối đa&lt;/strong> imposter trong game.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤t≤1e4
+1≤n≤2e5
+0≤m≤5e5
+the structure &amp;#34;i j c&amp;#34; where i and j are two distinct integers and c is a string (1≤i,j≤n; i≠j; c is either imposter or crewmate
+There can be multiple comments for the same pair of (i,j).
+It is guaranteed that the sum of all n does not exceed 2e5 and the sum of all m does not exceed 5e5.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>5
+3 2
+1 2 imposter
+2 3 crewmate
+5 4
+1 3 crewmate
+2 5 crewmate
+2 4 imposter
+3 4 imposter
+2 2
+1 2 imposter
+2 1 crewmate
+3 5
+1 2 imposter
+1 2 imposter
+3 2 crewmate
+3 2 crewmate
+1 3 imposter
+5 0
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+4
+-1
+2
+5
+&lt;/code>&lt;/pre></description></item></channel></rss>

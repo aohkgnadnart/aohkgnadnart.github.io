@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brute Force on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/brute-force/</link><description>Recent content in Brute Force on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/brute-force/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: Going Home</title><link>http://localhost:1313/posts/2021-11-27-GoingHome/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-11-27-GoingHome/</guid><description>&lt;p>Cho mảng &lt;code>a&lt;/code> có &lt;code>n&lt;/code> phần tử. Tìm &lt;code>4&lt;/code> vị trí khác nhau &lt;code>x, y, z, t&lt;/code> sao cho &lt;code>ax + ay = az + at&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4≤n≤200000
+1≤ai≤2.5e6
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>6
+2 1 5 2 7 4
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>YES
+2 3 1 6 
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Kingdom of Cats</title><link>http://localhost:1313/posts/2021-12-03-Kingdom-of-Cats/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-03-Kingdom-of-Cats/</guid><description>&lt;p>Choa tọa độ n điểm trong mp Oxy. Tính số tứ giác lồi khác nhau được tạo ra.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤n≤50
+−1e9≤xi,yi≤1e9
+tổng n trong tất cả các test không quá 500
+n = 0 kết thúc chương trình
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>7 
+4 1 
+3 1 
+2 1 
+1 1 
+1 2 
+1 3 
+1 4 
+4 
+0 0 
+0 2 
+2 0 
+2 2 
+0
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>9 
+1
+&lt;/code>&lt;/pre></description></item><item><title>Problem: Korney Korneevich and XOR</title><link>http://localhost:1313/posts/2021-10-28-KorneyKorneevichandXOR/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-10-28-KorneyKorneevichandXOR/</guid><description>&lt;p>Cho mảng a gồm n &lt;code>(n &amp;lt;= 1e6)&lt;/code> số nguyên &lt;code>(0 &amp;lt;= a[i] &amp;lt;= 5000)&lt;/code>. Xuất ra tất cả giá trị xor của tất cả mảng con(subsequence) tăng dần trong mảng.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1≤n≤1e6
+0≤ai≤5000
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+4 2 2 4
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>4
+0 2 4 6 
+&lt;/code>&lt;/pre></description></item></channel></rss>

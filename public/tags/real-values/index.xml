@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Real Values on Aohkgnadnart Blog</title><link>http://localhost:1313/tags/real-values/</link><description>Recent content in Real Values on Aohkgnadnart Blog</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/tags/real-values/index.xml" rel="self" type="application/rss+xml"/><item><title>Problem: Nature Reserve</title><link>http://localhost:1313/posts/2021-12-07-NatureReserve/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/2021-12-07-NatureReserve/</guid><description>&lt;p>Cho tọa độ &lt;code>n&lt;/code> điểm trên mặt phẳng Oxy. Tìm đường tròn có bán kính nhỏ nhất chứa &lt;code>n&lt;/code> điểm này, và đường tròn này có đúng &lt;code>1&lt;/code> giao điểm với đường thẳng &lt;code>y = 0&lt;/code>.&lt;/p>
+&lt;p>Xuất ra bán kính (sai số không quá &lt;code>1e-6&lt;/code>). Nếu không tồn tại đường tròn phù hợp yêu cầu, xuất &lt;code>-1&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Ràng buộc&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>1 &amp;lt;= n &amp;lt;= 1e5
+-1e7 &amp;lt;= x[i], y[i] &amp;lt;= 1e7
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>2
+0 1
+1 1
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>0.625
+&lt;/code>&lt;/pre></description></item></channel></rss>
