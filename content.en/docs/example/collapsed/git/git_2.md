@@ -3,7 +3,7 @@ title: "Cách xóa hoàn toàn một commit khỏi lịch sử"
 ---
 Để xóa hoàn toàn một commit khỏi lịch sử (biến mất không dấu vết), bạn sẽ cần phải **viết lại lịch sử commit** của nhánh bằng cách sử dụng lệnh **git reset** hoặc **git rebase -i** rồi **force push** lên remote. Dưới đây là các bước cụ thể:
 
-# 1. Sử dụng **git reset** (nếu commit cần loại bỏ là commit cuối cùng hoặc gần cuối)
+# 1. Sử dụng **git reset** (nếu commit cần loại bỏ là commit cuối cùng)
 - **Bước 1:** Xác định commit trước commit bạn muốn loại bỏ. Giả sử bạn muốn xóa commit cuối cùng, bạn có thể đưa nhánh về commit trước đó:
   ```bash
   git reset --hard HEAD~1
@@ -13,6 +13,8 @@ title: "Cách xóa hoàn toàn một commit khỏi lịch sử"
   git push origin <branch-name> --force
   ```
   *Lưu ý:* Việc sử dụng `--force` sẽ ghi đè lịch sử trên remote, vì vậy hãy chắc chắn rằng không có ai khác đang làm việc trên nhánh đó.
+
+  *Lưu ý:* Với cách này, có thể loại bỏ nhiều commit liên tiếp mới nhất bằng cách đưa nhánh về commit HEAD~**x**.
 
 # 2. Sử dụng **git rebase -i** (nếu commit cần xóa nằm giữa lịch sử commit)
 - **Bước 1:** Chạy rebase tương tác bắt đầu từ commit ngay trước commit cần loại bỏ:
